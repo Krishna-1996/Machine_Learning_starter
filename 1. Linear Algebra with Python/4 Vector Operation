@@ -1,0 +1,30 @@
+#4. Vector Operation:
+# Equation 1
+# Dot Product
+import numpy as np
+v = np.array([1, 2, 3])
+w = np.array([4, 5, 6])
+dot_product = np.dot(v, w)
+print("Dot Product:")
+print(dot_product)
+# Cross Product
+v = np.array([1, 0, 0])
+w = np.array([0, 1, 0])
+cross_product = np.cross(v, w)
+print("Cross Product:")
+print(cross_product)
+
+#Equation 2:
+'''a = [1, 2, 3]
+    b = [4, 5, 6]
+'''
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+# Dot product
+dot_product = np.dot(a, b)
+print("Dot Product:", dot_product)
+
+# Cross product
+cross_product = np.cross(a, b)
+print("Cross Product:", cross_product)
