@@ -1,27 +1,31 @@
 # Machine_Learning_starter
-Beginner Level:
-Math Fundamentals:
 
-Learn Linear Algebra: Scalars, Vectors, Matrices, Matrix Operations.
-Understand Calculus: Differentiation, Integration, Partial Derivatives.
-Programming:
+<h3>Beginner Level:</h3>
 
-Choose a language: Python is highly recommended.
-Learn Python basics: Syntax, Data Structures (Lists, Dictionaries, Tuples), Control Flow.
-Python Libraries:
 
-Numpy: For numerical computations.
+<h5>1. Math Fundamentals:</h5>
+<ul>Learn Linear Algebra: Scalars, Vectors, Matrices, Matrix Operations.
+Understand Calculus: Differentiation, Integration, Partial Derivatives.</ul>
+
+<h5>2. Programming:</h5>
+    <ul>
+      Choose a language: Python is highly recommended.
+      Learn Python basics: Syntax, Data Structures (Lists, Dictionaries, Tuples), Control Flow.
+    </ul>
+
+<h5>1. Python Libraries:</h5>
+<ul>Numpy: For numerical computations.
 Pandas: For data manipulation and analysis.
-Matplotlib and Seaborn: For data visualization.
-Introduction to Machine Learning:
+Matplotlib and Seaborn: For data visualization.</ul>
+<h5>1. Introduction to Machine Learning:
 
 Understand supervised vs. unsupervised learning.
 Learn about basic algorithms: Linear Regression, Logistic Regression, k-Nearest Neighbors.
-Hands-on Projects:
-
+<h5>1. Hands-on Projects:
 Work on small projects to apply what you've learned.
 Utilize datasets from platforms like Kaggle or UCI Machine Learning Repository.
-Intermediate Level:
+
+<h3>Intermediate Level:</h3>
 Deepen Understanding:
 
 Study more advanced algorithms: Decision Trees, Random Forests, Support Vector Machines.
@@ -34,7 +38,7 @@ Model Evaluation:
 
 Understand evaluation metrics: Accuracy, Precision, Recall, F1-score, ROC-AUC.
 Cross-validation techniques.
-Advanced Topics:
+<h3>Advanced Topics:</h3>
 
 Dimensionality Reduction: PCA, t-SNE.
 Clustering: K-means, Hierarchical clustering.
