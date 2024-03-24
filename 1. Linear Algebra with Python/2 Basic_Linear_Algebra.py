@@ -69,15 +69,4 @@ print("Trace:", trace_H)
 #**************
 
 
-#6.  Norms
-norm_vector = np.linalg.norm(vector_row)
-print("Norm of vector:", norm_vector)
 
-#7.   Singular Value Decomposition (SVD)
-U, S, V = np.linalg.svd(H)
-print("U (Left Singular Vectors):")
-print(U)
-print("S (Singular Values):")
-print(S)
-print("V^T (Right Singular Vectors Transpose):")
-print(V)

@@ -23,3 +23,13 @@ eigenvalues, eigenvectors = np.linalg.eig(A)
 # Print the results
 print("Eigenvalues:", eigenvalues)
 print("Eigenvectors:", eigenvectors)
+print("*******************")
+print("Equation 2")
+# Equation 2: 4 X 4 matric
+X = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]])
+# Compute eigenvalues and eigenvectors
+eigenvalues, eigenvectors = np.linalg.eig(X)
+
+# Print the results
+print("Eigenvalues:", eigenvalues)
+print("Eigenvectors:", eigenvectors)
