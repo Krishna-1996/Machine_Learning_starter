@@ -5,7 +5,7 @@
 
 <h5>1. Math Fundamentals:</h5>
 <ul>
-    <li>Learn Linear Algebra: Scalars, Vectors, Matrices, Matrix Operations.</li>
+    <li><b>Learn Linear Algebra:</b> Scalars, Vectors, Matrices, Matrix Operations.</li>
     <li>Understand Calculus: Differentiation, Integration, Partial Derivatives.</li>
 </ul>
 
