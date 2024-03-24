@@ -1,33 +1,33 @@
 # Machine_Learning_starter
 
-<h3>Beginner Level:</h3>
+<h2>Beginner Level:</h2>
 
 
-<h5>1. Math Fundamentals:</h5>
+<h3>1. Math Fundamentals:</h3>
 <ul>
     <li><b>Learn Linear Algebra:</b> Scalars, Vectors, Matrices, Matrix Operations.</li>
-    <li>Understand Calculus: Differentiation, Integration, Partial Derivatives.</li>
+    <li><b>Understand Calculus:</b> Differentiation, Integration, Partial Derivatives.</li>
 </ul>
 
-<h5>2. Programming:</h5>
+<h3>2. Programming:</h3>
     <ul>
-      Choose a language: Python is highly recommended.
-      Learn Python basics: Syntax, Data Structures (Lists, Dictionaries, Tuples), Control Flow.
+      <li><b>Choose a language:</b> Python is highly recommended.</li>
+      <li><b>Learn Python basics:</b> Syntax, Data Structures (Lists, Dictionaries, Tuples), Control Flow.</li>
     </ul>
 
-<h5>1. Python Libraries:</h5>
+<h3>1. Python Libraries:</h3>
 <ul>Numpy: For numerical computations.
 Pandas: For data manipulation and analysis.
 Matplotlib and Seaborn: For data visualization.</ul>
-<h5>1. Introduction to Machine Learning:
+<h3>1. Introduction to Machine Learning:
 
 Understand supervised vs. unsupervised learning.
 Learn about basic algorithms: Linear Regression, Logistic Regression, k-Nearest Neighbors.
-<h5>1. Hands-on Projects:
+<h3>1. Hands-on Projects:
 Work on small projects to apply what you've learned.
 Utilize datasets from platforms like Kaggle or UCI Machine Learning Repository.
 
-<h3>Intermediate Level:</h3>
+<h2>Intermediate Level:</h2>
 Deepen Understanding:
 
 Study more advanced algorithms: Decision Trees, Random Forests, Support Vector Machines.
@@ -40,7 +40,7 @@ Model Evaluation:
 
 Understand evaluation metrics: Accuracy, Precision, Recall, F1-score, ROC-AUC.
 Cross-validation techniques.
-<h3>Advanced Topics:</h3>
+<h2>Advanced Topics:</h2>
 
 Dimensionality Reduction: PCA, t-SNE.
 Clustering: K-means, Hierarchical clustering.
