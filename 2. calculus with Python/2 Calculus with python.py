@@ -76,4 +76,4 @@ equation = x**2 - 4*x + 4
 
 # Step 3: Solve the Equation
 solutions = sp.solve(equation, x)
-print("Solutions from Python:", solutions)
+print("Solutions via Python:", solutions)
