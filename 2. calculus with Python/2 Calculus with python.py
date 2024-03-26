@@ -2,7 +2,7 @@ import sympy as sp
 import numpy as np
 import matplotlib.pyplot as plt
 
-'''
+
 # Define a symbol
 x = sp.Symbol('x')
 
@@ -58,7 +58,7 @@ print("Indefinite Integral:", F)
 print("Solution:", solution)
 print("Numerical Derivative at x =", x_value, ":", derivative_at_x)
 print("Numerical Integral:", integral_value)
-'''
+
 
 print("***************************************")
 print("EXAMPLES with REAL TIME PROBLEMS")
