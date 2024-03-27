@@ -1,4 +1,5 @@
 '''Calculating Limits: 
+
 '''
 
 
@@ -68,15 +69,17 @@ def sin_fun(my_x):
 
 x = np.linspace(-10, 10, 1000)#curve start, finish, intervals
 y = sin_fun(x)
+
 plt.plot(x, y, label='(x**2-1)/(x-1)')
 plt.xlabel('x')#label x
 plt.ylabel('y')#label y
+
 plt.title('Plot of y = (x**2-1)/(x-1)')#title of curve
 plt.axhline(y = 0, color="lightgrey")#plot horizontal line y = 0
 plt.axvline(x = 0, color="lightgrey")#plot vertical line x = 0
 
-plt.xlim(-1,5)#x limit
-plt.ylim(-1,5)#y limit
+plt.xlim(-12,12)#x limit
+plt.ylim(-2,2)#y limit
 
 plt.axhline(y = 2, color="red", linestyle = '--')#plot horizontal line y = 2
 plt.axvline(x = 1, color="red", linestyle = '--')#plot vertical line x = 1
