@@ -55,3 +55,9 @@ plt.ylim(-1,5)#y limit
 plt.axhline(y = 2, color="red", linestyle = '--')#plot horizontal line y = 2
 plt.axvline(x = 1, color="red", linestyle = '--')#plot vertical line x = 1
 plt.show()#show  curve
+
+print("**********************************") 
+#Equation 3: lim(x->0){(sin x / x}
+def sin_fun(my_x):
+        my_y = np.sin(my_x)/my_x
+        return my_y
