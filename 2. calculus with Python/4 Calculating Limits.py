@@ -26,8 +26,11 @@ plt.ylim(0.99,1.01)
 plt.show()#show  curve
 '''
 print("**********************************")
+
+
 #FOR NON-CONTINIOUS FUNCTION 
 #Equation 2: lim(x->1){(x**2-1)/(x-1)}
+'''
 def my_fun(my_x):
         my_y = (my_x**2-1)/(my_x-1)
         return my_y
@@ -55,9 +58,26 @@ plt.ylim(-1,5)#y limit
 plt.axhline(y = 2, color="red", linestyle = '--')#plot horizontal line y = 2
 plt.axvline(x = 1, color="red", linestyle = '--')#plot vertical line x = 1
 plt.show()#show  curve
-
+'''
 print("**********************************") 
-#Equation 3: lim(x->0){(sin x / x}
+
+#Equation 3: lim(x->0){(sin x / x)}
 def sin_fun(my_x):
         my_y = np.sin(my_x)/my_x
         return my_y
+
+x = np.linspace(-10, 10, 1000)#curve start, finish, intervals
+y = sin_fun(x)
+plt.plot(x, y, label='(x**2-1)/(x-1)')
+plt.xlabel('x')#label x
+plt.ylabel('y')#label y
+plt.title('Plot of y = (x**2-1)/(x-1)')#title of curve
+plt.axhline(y = 0, color="lightgrey")#plot horizontal line y = 0
+plt.axvline(x = 0, color="lightgrey")#plot vertical line x = 0
+
+plt.xlim(-1,5)#x limit
+plt.ylim(-1,5)#y limit
+
+plt.axhline(y = 2, color="red", linestyle = '--')#plot horizontal line y = 2
+plt.axvline(x = 1, color="red", linestyle = '--')#plot vertical line x = 1
+plt.show()#show  curve
