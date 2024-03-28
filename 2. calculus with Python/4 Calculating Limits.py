@@ -89,36 +89,28 @@ print("**********************************")
 
 #Equation 4: lim(x->infi){25 / x)}
 
-def infi_fun(my_x):
-        my_y = 25/my_x
-        return my_y
-x = np.linspace(-10, 10, 1000)#curve start, finish, intervals
-y = infi_fun(x)
-plt.plot(x, y, label='25/x')
-plt.xlabel('x')#label x
-plt.ylabel('y')#label y
+def func(x):
+    return 25 / x
 
-plt.title('Plot of y = 25/x')#title of curve
+# Generate positive and negative x values
+x_positive = np.linspace(0.001, 20, 500)  # Generate positive x values from 0.1 to 10
+x_negative = np.linspace(-20, -0.001, 500)  # Generate negative x values from -10 to -0.1
 
-plt.xlim(-10,10)#x limit
-plt.ylim(-300,300)#y limit
-plt.grid(True)# Add grid
+# Calculate corresponding y values for positive and negative x
+y_positive = func(x_positive)
+y_negative = func(x_negative)
 
-#plt.show()#show  curve
-#Here is a gap between two exp, bcuz 25 can't divide by 0.
-#Lets seprate this data
-right_x = x[x>0]
-left_x = x[x<0]
-right_y = infi_fun(right_x)
-left_y = infi_fun(left_x)
-
-plt.plot(left_x, left_y, c = 'C0')
-plt.plot(right_x, right_y, c = 'C0')
-plt.xlabel('x')#label x
-plt.ylabel('y')#label y
-
-plt.xlim(-10,10)#x limit
-plt.ylim(-300,300)#y limit
-plt.grid(True)# Add grid
-
-plt.show()#show  curve
+# Plot the positive and negative curves
+plt.figure(figsize=(8, 6))
+plt.plot(x_positive, y_positive, label='$y = \\frac{25}{x}$ for $x > 0$', color='blue')
+plt.plot(x_negative, y_negative, label='$y = \\frac{25}{x}$ for $x < 0$', color='red')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Plot of $y = \\frac{25}{x}$')
+plt.axvline(x=0, color='black', linestyle='--', linewidth=0.5)  # Vertical line at x=0
+plt.axhline(y=0, color='black', linestyle='--', linewidth=0.5)  # Horizontal line at y=0
+plt.legend()
+plt.grid(True)
+plt.ylim(-100, 100)  # Set y-axis limits for better visualization
+plt.xlim(-10, 10)    # Set x-axis limits for better visualization
+plt.show()
