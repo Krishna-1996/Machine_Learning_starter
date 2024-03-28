@@ -68,33 +68,36 @@ plt.plot(x, line_y1)
 plt.show()'''
 
 #Exercise 1: plot the slope of line point 'p' for x= -1
+x1 = 2
+y1 = 10
 plt.plot(x,y, label='x**2 + 2*x +2')
 plt.xlabel('x')
 plt.ylabel('y')
 plt.grid(True)
 plt.title('Graph for x = -1')
 #Location of p = (2,10)
-#Location of p1 = (x,y )
+#Location of p1 = (x1,y1 )
 #Step 1: Find the value to y and x = -1
-x = -1
-y = fun(x)
-print("y = ", y)#y = 1
+x2 = -1
+y2 = fun(x2)
+print("y = ", y2)#y = 1
 #Location of p1 = (-1,1 )
 #Step 2: Plot a location of p and p1
-plt.scatter(2,10)
-plt.scatter(-1,1)
+
+plt.scatter(x1,y1)
+plt.scatter(x2,y2)
 
 #Step 3: Find the slope 'm' for line point p and p1
 #m = ∆y/∆x = (y2-y1)/(x2-x1)
-m = (10-1)/(2-(-1))
-print("m = ",m)#m = 3.0
+m = (y2-y1)/(x2-x1)
+print("m = ",m)#m = 
 
 #step 4: Plot the line y = m*x + b => p1 = (m*p) + b => b = p1 - (m*p)
 b = 1 - (3*-1)
 print("b = ",b)# b = 
-line_y1 = (m*-1) + b
+y2 = (m*x2) + b
 plt.xlim(-5, 10)
 plt.ylim(-5, 150)
-plt.plot(x, line_y1)
+plt.plot(x, y2)
 plt.show()
 
