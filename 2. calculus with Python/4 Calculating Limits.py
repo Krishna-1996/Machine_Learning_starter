@@ -61,7 +61,7 @@ plt.axvline(x = 1, color="red", linestyle = '--')#plot vertical line x = 1
 plt.show()#show  curve
 '''
 print("**********************************") 
-
+'''
 #Equation 3: lim(x->0){(sin x / x)}
 def sin_fun(my_x):
         my_y = np.sin(my_x)/my_x
@@ -83,4 +83,42 @@ plt.ylim(-2,2)#y limit
 
 plt.axhline(y = 2, color="red", linestyle = '--')#plot horizontal line y = 2
 plt.axvline(x = 1, color="red", linestyle = '--')#plot vertical line x = 1
+plt.show()#show  curve
+'''
+print("**********************************") 
+
+#Equation 4: lim(x->infi){25 / x)}
+
+def infi_fun(my_x):
+        my_y = 25/my_x
+        return my_y
+x = np.linspace(-10, 10, 1000)#curve start, finish, intervals
+y = infi_fun(x)
+plt.plot(x, y, label='25/x')
+plt.xlabel('x')#label x
+plt.ylabel('y')#label y
+
+plt.title('Plot of y = 25/x')#title of curve
+
+plt.xlim(-10,10)#x limit
+plt.ylim(-300,300)#y limit
+plt.grid(True)# Add grid
+
+#plt.show()#show  curve
+#Here is a gap between two exp, bcuz 25 can't divide by 0.
+#Lets seprate this data
+right_x = x[x>0]
+left_x = x[x<0]
+right_y = infi_fun(right_x)
+left_y = infi_fun(left_x)
+
+plt.plot(left_x, left_y, c = 'C0')
+plt.plot(right_x, right_y, c = 'C0')
+plt.xlabel('x')#label x
+plt.ylabel('y')#label y
+
+plt.xlim(-10,10)#x limit
+plt.ylim(-300,300)#y limit
+plt.grid(True)# Add grid
+
 plt.show()#show  curve
