@@ -52,12 +52,13 @@ Eg: y = (4x^2)(x^3 + 1)
 '''
 # 6. The Chain Rule for Derivatives
 '''
-
+nested function g(f(x))=> g function f(x) and f function x.
 
 '''
  
 # 7. Power Rule on a Function Chain
 '''
+add 2 multiple rule
 
 
 '''
