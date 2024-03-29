@@ -35,7 +35,7 @@ Eg: y = (6x^3)(7x^4)
 => dw/dx = 6*(3x^2) ; dz/dx = 7*(4x^3)
 => dw/dx = 18(x^2) ; dz/dx = 28(x^3)
 
-=> d(wz/wx) = w(dz/dx) + z(dw/dx)
+=> d(wz/wx) = (w(dz/dx) + z(dw/dx))/z^2
 => d(wz/wx) = 6x^3(28(x^3)) + 7x^4(18(x^2))
 => d(wz/wx) = 168x^6 + 126x^6
 => d(wz/wx) = 294x^6
