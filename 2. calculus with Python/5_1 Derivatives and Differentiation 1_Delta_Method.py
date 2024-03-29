@@ -96,8 +96,8 @@ print("m = ",m)#m =
 b = 1 - (3*-1)
 print("b = ",b)# b = 
 y2 = (m*x2) + b
-plt.xlim(-5, 10)
-plt.ylim(-5, 150)
-plt.plot(x, y2)
+plt.xlim(-2, 5)
+plt.ylim(-5, 50)
+plt.plot(x1, y2)
 plt.show()
 
