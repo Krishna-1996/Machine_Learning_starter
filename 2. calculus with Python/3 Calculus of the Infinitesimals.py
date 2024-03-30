@@ -12,7 +12,7 @@ y = x**2 + 2*x + 2
 #Plot this x, y curve
 plt.plot(x, y, label='y=x^2 + 2x + 2')
 plt.xlabel('X')#label x
-plt.ylabel('y')#label y
+plt.ylabel('Y')#label y
 plt.title('Plot of y = x^2 + 2x + 2')#title of curve
 
 plt.grid(True)# Add grid
