@@ -26,7 +26,7 @@ plt.xlim(-1.01,-0.99)
 plt.ylim(0.99,1.01)
 plt.show()#show  curve
 '''
-print("**********************************")
+print("************************************")
 
 
 #FOR NON-CONTINIOUS FUNCTION 
@@ -60,7 +60,7 @@ plt.axhline(y = 2, color="red", linestyle = '--')#plot horizontal line y = 2
 plt.axvline(x = 1, color="red", linestyle = '--')#plot vertical line x = 1
 plt.show()#show  curve
 '''
-print("**********************************") 
+print("************************************") 
 '''
 #Equation 3: lim(x->0){(sin x / x)}
 def sin_fun(my_x):
