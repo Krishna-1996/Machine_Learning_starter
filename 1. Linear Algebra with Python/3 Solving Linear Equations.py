@@ -10,14 +10,14 @@ x = np.linalg.solve(A, b)
 # Step 3: Print the solution
 print("Solution to Ax = b:")
 print(x)
-print("*******************")
+print("*********************")
 #Equation 2
 m = np.array([[2, 3], [5, -1]])
 n = np.array([8, -2])
 p = np.linalg.solve(m, n)
 print("Solution to mp = n:")
 print(p)
-print("*******************")
+print("*********************")
 #Equation 3
 A = np.array([[7, 2], [-14, 0]])
 b = np.array([8, 0])

@@ -9,7 +9,8 @@ print("Norm of vector:", norm_vector)
 #7.   Singular Value Decomposition (SVD)
 '''
 VD is a factorization of a real or complex matrix. For an 
-× m × n matrix A, SVD decomposes it into three matrices:
+× m × n matrix A.
+SVD decomposes it into three matrices:
 Applications of SVD:
 Dimensionality reduction
 Data compression

@@ -15,7 +15,7 @@ B = np.array([[5, 6], [7, 8]])
 # Matrix Operations
 result = np.dot(A, B)
 print(result)
-print("*****")
+print("*******")
 transpose_A = np.transpose(A)
 print(transpose_A)
 print("*****")

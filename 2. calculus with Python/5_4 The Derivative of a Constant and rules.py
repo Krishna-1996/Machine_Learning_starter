@@ -58,7 +58,7 @@ nested function g(f(x))=> g function f(x) and f function x.
  
 # 7. Power Rule on a Function Chain
 '''
-add 2 multiple rule
+add 2 multiple rule in single one 
 
 
 '''

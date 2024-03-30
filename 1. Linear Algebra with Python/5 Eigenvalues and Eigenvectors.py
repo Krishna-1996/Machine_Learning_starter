@@ -5,7 +5,7 @@ Given a square matrix A, an eigenvector v and its corresponding eigenvalue
 
 Av=λv
 
-Here's what eigenvalues and eigenvectors represent:
+Here's what Eigenvalues and Eigenvectors represent:
 
 Eigenvectors: These are non-zero vectors that are only scaled by the linear transformation represented by matrix A.
 In other words, when the matrix A is applied to an eigenvector, the resulting vector is parallel to the original eigenvector, possibly with a different magnitude.

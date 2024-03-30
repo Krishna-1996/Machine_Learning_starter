@@ -18,7 +18,7 @@ print(matrix)
 
 # 2. Basic Operations:
 
-# Matrix Addition and Subtraction
+# Matrix Addition and Subtraction:
 A = np.array([[1, 2], [3, 4]])
 B = np.array([[5, 6], [7, 8]])
 C_addition = A + B
@@ -28,7 +28,7 @@ print(C_addition)
 print("Matrix Subtraction:")
 print(C_subtraction)
 
-# Scalar Multiplication
+# Scalar Multiplication:
 scalar = 2
 C_scalar_multiplication = scalar * A
 print("Scalar Multiplication:")
