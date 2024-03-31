@@ -29,7 +29,7 @@ print(model.summary())
 X_new = sm.add_constant(new_data[['independent_var1', 'independent_var2', ...]])
 predictions = model.predict(X_new)
 
-# 8. Visualization
+# 8. Visualization:
 # Plot actual vs. predicted values
 plt.scatter(y, predictions)
 plt.plot(y, y, color='red')  # Identity line (y = x)
