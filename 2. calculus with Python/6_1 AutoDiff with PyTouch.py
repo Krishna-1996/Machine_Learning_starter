@@ -5,7 +5,7 @@ dy/dx = 2x = 2(5) = 10
 '''
 import torch
 x = torch.tensor(5.0)
-x.requires_grad_()#contagiously track gradients through forward pass
+print(x.requires_grad_())#contagiously track gradients through forward pass
 y = x**2
 y.backward()#use autodifff(dy/dx)
 print(x.grad)
