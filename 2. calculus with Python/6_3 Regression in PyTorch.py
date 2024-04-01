@@ -21,3 +21,4 @@ plt.xlabel("Drug dosage")
 plt.ylabel("Frogetfulness")
 plt.scatter(x,y)
 plt.show()
+#Next create slope (line) parameter m with a random pf 0.9...
