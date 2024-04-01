@@ -16,3 +16,8 @@ mean=torch.zeros(8) = sets the mean of the normal distribution to zero for each 
 std=0.2 = sets the standard deviation of the normal distribution to 0.2, controlling the amount of noise added to each element.
 '''
 print(y)
+plt.title("Clinical Trial")
+plt.xlabel("Drug dosage")
+plt.ylabel("Frogetfulness")
+plt.scatter(x,y)
+plt.show()
