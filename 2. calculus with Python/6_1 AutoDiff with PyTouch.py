@@ -1,5 +1,5 @@
+# 6_1 AutoDiff with PyTouch.
 '''
-6_1 AutoDiff with PyTouch.
 f(x) y = x^2
 dy/dx = 2x = 2(5) = 10
 '''
