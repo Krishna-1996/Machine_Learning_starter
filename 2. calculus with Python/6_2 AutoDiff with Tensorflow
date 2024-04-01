@@ -11,4 +11,4 @@ with tf.GradientTape() as t:
     t.watch(x)#track forward pass
     y = x**2 
 print(t.gradient(y, x))#use autodiff
-#6_3 AutoDiff with Tensorflow
+
