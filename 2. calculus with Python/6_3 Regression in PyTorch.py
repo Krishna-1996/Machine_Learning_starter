@@ -23,3 +23,5 @@ plt.scatter(x, y)
 plt.show()
 # Next create slope (line) parameter m with a random pf 0.9...
 m = torch.tensor([0.9]).requires_grad_()
+b = torch.tensor([0.1]).requires_grad_()
+ 
