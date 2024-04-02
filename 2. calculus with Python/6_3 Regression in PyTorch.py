@@ -13,7 +13,7 @@ y = (m*x) + b + torch.normal(mean=torch.zeros(8), std=0.2)
 '''
 torch.normal() = generates random numbers sampled from a normal distribution.
 mean=torch.zeros(8) = sets the mean of the normal distribution to zero for each of the eight elements in the tensor.
-std=0.2 = sets the standard deviation of the normal distribution to 0.2, controlling the amount of noise added to each element.
+std=0.2 = Sets the standard deviation of the normal distribution to 0.2, controlling the amount of noise added to each element.
 '''
 print(y)
 plt.title("Clinical Trial")
