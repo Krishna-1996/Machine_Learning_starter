@@ -19,6 +19,6 @@ print(y)
 plt.title("Clinical Trial")
 plt.xlabel("Drug dosage")
 plt.ylabel("Froget fulness")
-plt.scatter(x,y)
+plt.scatter(x, y)
 plt.show()
 # Next create slope (line) parameter m with a random pf 0.9...
