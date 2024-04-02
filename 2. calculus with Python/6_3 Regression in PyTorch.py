@@ -11,7 +11,7 @@ b = 2       #Sets the y-intercept of the linear equation.
 #Due to real world problems, we need to add some noise in this equation by:
 y = (m*x) + b + torch.normal(mean=torch.zeros(8), std=0.2)
 '''
-torch.normal() =  generates random numbers sampled from a normal distribution.
+torch.normal() = generates random numbers sampled from a normal distribution.
 mean=torch.zeros(8) = sets the mean of the normal distribution to zero for each of the eight elements in the tensor.
 std=0.2 = sets the standard deviation of the normal distribution to 0.2, controlling the amount of noise added to each element.
 '''
