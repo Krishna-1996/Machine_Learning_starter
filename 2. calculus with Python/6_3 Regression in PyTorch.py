@@ -18,7 +18,7 @@ std=0.2 = sets the standard deviation of the normal distribution to 0.2, control
 print(y)
 plt.title("Clinical Trial")
 plt.xlabel("Drug dosage")
-plt.ylabel("Frogetfulness")
+plt.ylabel("Froget fulness")
 plt.scatter(x,y)
 plt.show()
 #Next create slope (line) parameter m with a random pf 0.9...
