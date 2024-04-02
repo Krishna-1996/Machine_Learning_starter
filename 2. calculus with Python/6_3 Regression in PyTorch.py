@@ -24,4 +24,11 @@ plt.show()
 # Next create slope (line) parameter m with a random pf 0.9...
 m = torch.tensor([0.9]).requires_grad_()
 b = torch.tensor([0.1]).requires_grad_()
- 
+
+def regression_plot(my_x, my_y, my_m, my_b):
+    plt.scatter(my_x, my_y)
+    x_min, x_max = plt.get_xlim()
+    y_min, y_max = my_m*x_min + my_b, my_m*my_x + my_b
+
+    plt.set_xlim([x_max,x_max])
+    plt.scatter([x_min, x_max], [y_min, y_max])
