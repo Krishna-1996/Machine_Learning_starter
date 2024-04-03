@@ -58,50 +58,50 @@ regression_plot(x, y, m, b)
 ### Machine Learning
 In four easy steps :)
 
-***Step 1*: Forward pass
+*** Step 1*: Forward pass
 """
 
 yhat = regression(x, m, b)
-yhat
+print(yhat)
 
-"""*Step 2**: Compare $\hat{y}$ with true $y$ to calculate cost $C$
+'''**Step 2**: Compare $\hat{y}$ with true $y$ to calculate cost $C$
 
 There is a PyTorch `MSELoss` method, but let's define it outselves to see how it works. MSE cost is defined by: $$C = \frac{1}{n} \sum_{i=1}^n (\hat{y_i}-y_i)^2 $$
-"""
+'''
 
 def mse(my_yhat, my_y):
     sigma = torch.sum((my_yhat - my_y)**2)
     return sigma/len(my_y)
 
 C = mse(yhat, y)
-C
+print("Cost: =",C)
 
 """**Step 3**: Use autodiff to calculate gradient of $C$ w.r.t. parameters"""
 
 C.backward()
 
-m.grad
+print("m.grad: ",m.grad)
 
-b.grad
+print("b.grad: ",b.grad)
 
 """**Step 4**: Gradient descent"""
 
 optimizer = torch.optim.SGD([m, b], lr=0.01)
+#optimizer with descent gradient = .SGD([list of all para], lr =learning rate(how much change))
 
-optimizer.step()
+optimizer.step()#will adjust the above method
 
 """Confirm parameters have been adjusted sensibly:"""
 
-m
-
-b
+print("Will adjust this much m: ",m)
+print("new adjusted b: ",b)
 
 regression_plot(x, y, m, b)
 
 """We can repeat steps 1 and 2 to confirm cost has decreased:"""
 
 C = mse(regression(x, m, b), y)
-C
+print("Cost: =",C)
 
 """Put the 4 steps in a loop to iteratively minimize cost toward zero:"""
 
