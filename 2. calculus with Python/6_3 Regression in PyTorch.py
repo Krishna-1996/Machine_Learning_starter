@@ -64,7 +64,7 @@ In four easy steps :)
 yhat = regression(x, m, b)
 yhat
 
-"""**Step 2**: Compare $\hat{y}$ with true $y$ to calculate cost $C$
+"""*Step 2**: Compare $\hat{y}$ with true $y$ to calculate cost $C$
 
 There is a PyTorch `MSELoss` method, but let's define it outselves to see how it works. MSE cost is defined by: $$C = \frac{1}{n} \sum_{i=1}^n (\hat{y_i}-y_i)^2 $$
 """
