@@ -53,7 +53,7 @@ def regression_plot(my_x, my_y, my_m, my_b):
 regression_plot(x, y, m, b)
 
 '''
-"""**Return to slides here if following *Calculus I* class.**
+"""*Return to slides here if following *Calculus I* class.**
 
 ### Machine Learning
 In four easy steps :)
