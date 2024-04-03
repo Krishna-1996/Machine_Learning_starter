@@ -94,7 +94,7 @@ optimizer.step()#will adjust the above method
 """Confirm parameters have been adjusted sensibly:"""
 
 print("Will adjust this much m: ",m)
-print("new adjusted b: ",b)
+print("Will adjust this much b: ",b)
 
 regression_plot(x, y, m, b)
 
