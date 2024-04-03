@@ -51,6 +51,7 @@ def regression_plot(my_x, my_y, my_m, my_b):
     _ = ax.plot([x_min, x_max], [y_min, y_max])
 
 regression_plot(x, y, m, b)
+plt.show()
 
 
 """*Return to slides here if following *Calculus I* class.**
@@ -64,9 +65,10 @@ In four easy steps :)
 yhat = regression(x, m, b)
 print(yhat)
 
-'''**Step 2**: Compare $\hat{y}$ with true $y$ to calculate cost $C$
+'''
+#**Step 2**: Compare $\hat{y}$ with true $y$ to calculate cost $C$
 
-There is a PyTorch `MSELoss` method, but let's define it outselves to see how it works. MSE cost is defined by: $$C = \frac{1}{n} \sum_{i=1}^n (\hat{y_i}-y_i)^2 $$
+#There is a PyTorch `MSELoss` method, but let's define it outselves to see how it works. MSE cost is defined by: $$C = \frac{1}{n} \sum_{i=1}^n (\hat{y_i}-y_i)^2 $$
 '''
 
 def mse(my_yhat, my_y):
@@ -97,7 +99,7 @@ print("Will adjust this much m: ",m)
 print("Will adjust this much b: ",b)
 
 regression_plot(x, y, m, b)
-
+plt.show()
 """We can repeat steps 1 and 2 to confirm cost has decreased:"""
 
 C = mse(regression(x, m, b), y)
