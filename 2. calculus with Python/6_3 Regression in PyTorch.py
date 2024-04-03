@@ -52,13 +52,13 @@ def regression_plot(my_x, my_y, my_m, my_b):
 
 regression_plot(x, y, m, b)
 
-'''
+
 """*Return to slides here if following *Calculus I* class.**
 
 ### Machine Learning
 In four easy steps :)
 
-**Step 1*: Forward pass
+***Step 1*: Forward pass
 """
 
 yhat = regression(x, m, b)
@@ -128,4 +128,3 @@ b.item()
 
 
 
-'''
