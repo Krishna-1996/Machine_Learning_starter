@@ -22,6 +22,7 @@ def func(x):
 
 #Step 2: Define x as PyTorch tensor
 x = torch.tensor(2.0, requires_grad=True)
+print(x)
 
 #Step 3: Compute the func for y
 y = func(x)
@@ -29,6 +30,7 @@ print(y)
 
 #Step 4: Compute the gradient (slope of 'y' w.r.t to 'x')
 y.backward()
+print(y.backward())
 
 #Step 5: Extract the slope
 slope = x.grad.item()
@@ -42,7 +44,8 @@ between y and x, and then fit the parameters m and b with 1000 epochs
 np.random.seed(0)
 torch.manual_seed(0)
 num_samples = (100)
-x = np.random.uniform(0,10,num_samples)
+#x = np.random.uniform(0,10,num_samples)
+x = 2
 y = 2 * x + np.random.normal(0,1,num_samples)
 
 # Step2: Convert numpy arrays to PyTorch tensors
