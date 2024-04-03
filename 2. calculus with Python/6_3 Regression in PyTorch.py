@@ -4,16 +4,16 @@ import torch
 import matplotlib.pyplot as plt
 
 x = torch.tensor([0, 1, 2, 3, 4, 5, 6, 7.]) # E.g.: Dosage of drug for treating Alzheimer's disease
-x
+print("x: =",x)
 
 """The $y$ values were created using the equation of a line $y = mx + b$. This way, we know what the model parameters to be learned are, say, $m = -0.5$ and $b = 2$. Random, normally-distributed noise has been added to simulate sampling error:"""
 
-# y = -0.5*x + 2 + torch.normal(mean=torch.zeros(8), std=0.2)
+y = -0.5*x + 2 + torch.normal(mean=torch.zeros(8), std=0.2)
 
 """For reproducibility of this demo, here's a fixed example of $y$ values obtained by running the commented-out line above:"""
 
-y = torch.tensor([1.86, 1.31, .62, .33, .09, -.67, -1.23, -1.37]) # E.g.: Patient's "forgetfulness score"
-y
+#y = torch.tensor([1.86, 1.31, .62, .33, .09, -.67, -1.23, -1.37]) # E.g.: Patient's "forgetfulness score"
+print("y: =",y)
 
 fig, ax = plt.subplots()
 plt.title("Clinical Trial")
@@ -27,12 +27,12 @@ _ = ax.scatter(x, y)
 """
 
 m = torch.tensor([0.9]).requires_grad_()
-m
+print("m: = ",m)
 
 """...and do the same for the $y$-intercept parameter $b$:"""
 
 b = torch.tensor([0.1]).requires_grad_()
-b
+print("b: = ",b)
 
 def regression(my_x, my_m, my_b):
     return my_m*my_x + my_b
@@ -63,7 +63,7 @@ In four easy steps :)
 """
 
 yhat = regression(x, m, b)
-print(yhat)
+print("yhat: =", yhat)
 
 '''
 #**Step 2**: Compare $\hat{y}$ with true $y$ to calculate cost $C$
@@ -102,8 +102,9 @@ regression_plot(x, y, m, b)
 plt.show()
 """We can repeat steps 1 and 2 to confirm cost has decreased:"""
 
-C = mse(regression(x, m, b), y)
-print("Cost: =",C)
+C = mse(regression(x, m, b), y)#cost after single adjustment
+print("New reduce 'Cost' after chaning the parameter m and b:")
+print("New reduce Cost: =",C)
 
 """Put the 4 steps in a loop to iteratively minimize cost toward zero:"""
 
@@ -112,19 +113,19 @@ for epoch in range(epochs):
 
     optimizer.zero_grad() # Reset gradients to zero; else they accumulate
 
-    yhat = regression(x, m, b) # Step 1
-    C = mse(yhat, y) # Step 2
+    yhat = regression(x, m, b) # Step 1 regression model
+    C = mse(yhat, y) # Step 2 calculate cost
 
-    C.backward() # Step 3
-    optimizer.step() # Step 4
+    C.backward() # Step 3 backword to 1 and 2 to get new data
+    optimizer.step() # Step 4 GD to get slope with adjust to m and b
 
     print('Epoch {}, cost {}, m grad {}, b grad {}'.format(epoch, '%.3g' % C.item(), '%.3g' % m.grad.item(), '%.3g' % b.grad.item()))
 
 regression_plot(x, y, m, b)
+plt.show()
 
-m.item()
-
-b.item()
+print("Adjusted 'm': = ",m.item())
+print("Adjusted 'b': = ",b.item())
 
 """**N.B.**: The model doesn't perfectly approximate the slope (-0.5) and $y$-intercept (2.0) used to simulate the outcomes $y$ at the top of this notebook. This reflects the imperfectness of the sample of eight data points due to adding random noise during the simulation step. In the real world, the best solution would be to sample additional data points: The more data we sample, the more accurate our estimates of the true underlying parameters will be."""
 
