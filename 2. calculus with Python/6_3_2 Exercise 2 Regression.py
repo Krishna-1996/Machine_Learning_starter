@@ -45,7 +45,7 @@ between y and x, and then fit the parameters m and b with 1000 epochs
 
 
 # Step4: Instantiate the model
-model = LinearRegression()
+
 
 # Step5: Define loss function and optimizer
 criterion = nn.MSELoss()
