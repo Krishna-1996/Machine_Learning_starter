@@ -17,12 +17,9 @@ print("Find the slope of x**2 + 2*x + 2, where x = 2")
 
 
 #Step 2: Define x as PyTorch tensor
-x = torch.tensor(2.0, requires_grad=True)
-print(x)
 
 #Step 3: Compute the func for y
-y = func(x)
-print(y)
+
 
 #Step 4: Compute the gradient (slope of 'y' w.r.t to 'x')
 y.backward()
