@@ -26,7 +26,7 @@ print("Find the slope of x**2 + 2*x + 2, where x = 2")
 
 
 #Step 5: Extract the slope
-slope = x.grad.item()
+
 print("The slope of y = x^2 + 2x + 2, where x = 2 is:", slope)
 
 '''
