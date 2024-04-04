@@ -22,7 +22,7 @@ print("Find the slope of x**2 + 2*x + 2, where x = 2")
 
 
 #Step 4: Compute the gradient (slope of 'y' w.r.t to 'x')
-y.backward()
+
 
 
 #Step 5: Extract the slope
