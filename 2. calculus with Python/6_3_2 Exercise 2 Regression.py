@@ -54,12 +54,7 @@ between y and x, and then fit the parameters m and b with 1000 epochs
 
     
     # Step8: Backward pass and optimization
-    optimizer.zero_grad()
-    loss.backward()
-    optimizer.step()
-    
-    if (epoch+1) % 100 == 0:
-        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
+   
 
 # Step9: Plot the results
 predicted = model(X).detach().numpy()
