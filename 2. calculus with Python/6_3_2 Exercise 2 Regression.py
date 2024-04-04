@@ -48,8 +48,7 @@ between y and x, and then fit the parameters m and b with 1000 epochs
 
 
 # Step5: Define loss function and optimizer
-criterion = nn.MSELoss()
-optimizer = optim.SGD(model.parameters(), lr=0.01)
+
 
 # Step6: Train the model
 num_epochs = 1000
