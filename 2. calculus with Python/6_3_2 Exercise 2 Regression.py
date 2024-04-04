@@ -21,14 +21,14 @@ def func(x):
 x = torch.tensor(2.0, requires_grad=True)
 
 #Step 3: Compute the func for y
-
+y = func(x)
+print("y = ",y)
 
 #Step 4: Compute the gradient (slope of 'y' w.r.t to 'x')
-
-
+y.backward()
 
 #Step 5: Extract the slope
-
+slope = x.grad.item()
 print("The slope of y = x^2 + 2x + 2, where x = 2 is:", slope)
 
 '''
