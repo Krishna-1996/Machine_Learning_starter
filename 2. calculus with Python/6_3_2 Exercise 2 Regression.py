@@ -34,9 +34,7 @@ Part 2: Using the Regression in PyTorch to simulate a new linear relationship
 between y and x, and then fit the parameters m and b with 1000 epochs
 '''
 # Step1: Generate synthetic data
-np.random.seed(0)
-torch.manual_seed(0)
-num_samples = (100)
+
 
 x = np.random.uniform(0,10,num_samples)
 y = 2 * x + np.random.normal(0,1,num_samples)
