@@ -36,12 +36,10 @@ between y and x, and then fit the parameters m and b with 1000 epochs
 # Step1: Generate synthetic data
 
 
-x = np.random.uniform(0,10,num_samples)
-y = 2 * x + np.random.normal(0,1,num_samples)
+
 
 # Step2: Convert numpy arrays to PyTorch tensors
-X = torch.tensor(x, dtype=torch.float32).reshape(-1, 1) # torch.tensor= convert np array to torch tensor
-Y = torch.tensor(y, dtype=torch.float32).reshape(-1, 1)
+
 
 # Step3: Define linear regression model
 class LinearRegression(nn.Module):
