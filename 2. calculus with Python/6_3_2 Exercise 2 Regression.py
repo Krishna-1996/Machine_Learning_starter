@@ -57,13 +57,6 @@ between y and x, and then fit the parameters m and b with 1000 epochs
    
 
 # Step9: Plot the results
-predicted = model(X).detach().numpy()
-plt.scatter(x, y, label='Original data')
-plt.plot(x, predicted, color='red', label='Fitted line')
-plt.xlabel('x')
-plt.ylabel('y')
-plt.title('Linear Regression')
-plt.legend()
-plt.show()
+
 
 
