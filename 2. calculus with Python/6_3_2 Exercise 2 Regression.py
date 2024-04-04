@@ -51,11 +51,7 @@ between y and x, and then fit the parameters m and b with 1000 epochs
 
 
 # Step6: Train the model
-num_epochs = 1000
-for epoch in range(num_epochs):
-    # Step7: Forward pass
-    outputs = model(X)
-    loss = criterion(outputs, Y)
+
     
     # Step8: Backward pass and optimization
     optimizer.zero_grad()
