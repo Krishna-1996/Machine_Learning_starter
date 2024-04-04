@@ -42,13 +42,7 @@ between y and x, and then fit the parameters m and b with 1000 epochs
 
 
 # Step3: Define linear regression model
-class LinearRegression(nn.Module):
-    def __init__(self):
-        super(LinearRegression, self).__init__()
-        self.linear = nn.Linear(1, 1)  # One input feature and one output
 
-    def forward(self, x):
-        return self.linear(x)
 
 # Step4: Instantiate the model
 model = LinearRegression()
