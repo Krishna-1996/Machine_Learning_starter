@@ -10,13 +10,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 '''
-Part 1: Find the slope of x**2 + 2*x + 2, where x = 2
+Part 1: Find the slope of x**2 + 3*x + 5, where x = 4
 '''
-print("Find the slope of x**2 + 2*x + 2, where x = 2")
+print("Find the slope of x**2 + 3*x + 5, where x = 4")
 #Step 1: Define equation in function
-
+def func(x):
+    return x**2 + 3*x + 5
 
 #Step 2: Define x as PyTorch tensor
+x = torch.tensor(2.0, requires_grad=True)
 
 #Step 3: Compute the func for y
 
