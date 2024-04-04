@@ -14,8 +14,7 @@ Part 1: Find the slope of x**2 + 2*x + 2, where x = 2
 '''
 print("Find the slope of x**2 + 2*x + 2, where x = 2")
 #Step 1: Define equation in function
-def func(x):
-    return x**2 + 2*x + 2 
+
 
 #Step 2: Define x as PyTorch tensor
 x = torch.tensor(2.0, requires_grad=True)
