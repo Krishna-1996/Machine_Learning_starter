@@ -3,10 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-# Define a symbol
+# Define a symbol:
 x = sp.Symbol('x')
 
-# Define a function
+# Define a function:
 def f(x):
     return x**2 + 3*x + 2
 
