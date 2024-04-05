@@ -60,9 +60,9 @@ print("Numerical Derivative at x =", x_value, ":", derivative_at_x)
 print("Numerical Integral:", integral_value)
 
 
-print("*****************************************")
+print("****************************************")
 print("EXAMPLES with REAL TIME PROBLEMS")
-print("*****************************************")
+print("****************************************")
 # EQUATION 1
 # f(x) = x**2 - 4x +4 = 0
 print("Equation 1: f(x) = x**2 - 4x +4 = 0")
