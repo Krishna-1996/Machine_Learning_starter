@@ -10,5 +10,5 @@ x = tf.Variable(5.0)
 with tf.GradientTape() as t:
     t.watch(x)#track forward pass
     y = x**2 
-print(t.gradient(y, x))#use autodiff
+print(t.gradient(y, x))#use auto-diff
 
