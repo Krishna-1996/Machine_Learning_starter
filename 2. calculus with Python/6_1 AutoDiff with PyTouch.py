@@ -8,7 +8,7 @@ import torch
 x = torch.tensor(5.0)
 print(x.requires_grad_())#contagiously track gradients through forward pass
 y = x**2
-y.backward()#use autodifff(dy/dx)
+y.backward()#use autodiff(dy/dx)
 print(x.grad)
 
 #Lets plot the slop as well
