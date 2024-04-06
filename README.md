@@ -29,7 +29,7 @@
         <li>Utilize datasets from platforms like Kaggle or UCI Machine Learning Repository.</ul>
 
 
-<h2>INTERMEDIATE LEVEL:</h2>
+<h2>INTERMEDIATE'S LEVEL:</h2>
 <h3>1. Deep Understanding:</h3>
 <ul><li><b>Study more advanced algorithms:</b> Decision Trees, Random Forests, Support Vector Machines.
     <li>Dive into ensemble methods.</ul>
