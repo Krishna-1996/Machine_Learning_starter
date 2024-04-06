@@ -8,7 +8,7 @@ import torch
 x = torch.tensor(5.0)
 print(x.requires_grad_())#contagiously track gradients through forward pass
 y = x**2
-y.backward()#use autodiff(dy/dx)
+y.backward()#use auto-diff(dy/dx)
 print(x.grad)
 
 #Lets plot the slop as well
@@ -23,7 +23,7 @@ def df(x):
 #Generate x values:
 x_values = np.linspace(-5, 5, 100)
 
-#Calcuate y values for both f(x) and its derivative
+#Calculate y values for both f(x) and its derivative
 y_values_f = f(x_values)
 y_values_df = df(x_values)
 
