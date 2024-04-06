@@ -108,7 +108,7 @@ plt.show()
 """We can repeat steps 1 and 2 to confirm cost has decreased:"""
 
 C = mse(regression(x, m, b), y)#cost after single adjustment
-print("New reduce 'Cost' after chaning the parameter m and b:")
+print("New reduce 'Cost' after changing the parameter m and b:")
 print("New reduce Cost: =",C)
 
 """Put the 4 steps in a loop to iteratively minimize cost toward zero:"""
@@ -121,7 +121,7 @@ for epoch in range(epochs):
     yhat = regression(x, m, b) # Step 1 regression model
     C = mse(yhat, y) # Step 2 calculate cost
 
-    C.backward() # Step 3 backword to 1 and 2 to get new data
+    C.backward() # Step 3 backward to 1 and 2 to get new data
     optimizer.step() # Step 4 GD to get slope with adjust to m and b
 
     print('Epoch {}, cost {}, m grad {}, b grad {}'.format(epoch, '%.3g' % C.item(), '%.3g' % m.grad.item(), '%.3g' % b.grad.item()))
