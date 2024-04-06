@@ -31,7 +31,7 @@
 
 <h2>INTERMEDIATE LEVEL:</h2>
 <h3>1. Deep Understanding:</h3>
-<ul><li><b>Study more advanced algorithms:</b>  Decision Trees, Random Forests, Support Vector Machines.
+<ul><li><b>Study more advanced algorithms:</b> Decision Trees, Random Forests, Support Vector Machines.
     <li>Dive into ensemble methods.</ul>
 
 <h3>2. Data Preprocessing:</h3>
