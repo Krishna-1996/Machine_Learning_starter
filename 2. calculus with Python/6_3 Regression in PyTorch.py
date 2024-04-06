@@ -24,7 +24,7 @@ _ = ax.scatter(x, y)
 """Initialize the slope parameter $m$ with a "random" value of 0.9...
 
 (*N.B.*: In this simple demo, we could guess approximately-correct parameter values to start with. 
-Or, we could use an algebraic (e.g., Moore-Penrose pseudoinverse) or statistical (e.g., ordinary-least-squares regression) 
+Or, we could use an algebraic (e.g., Moore-Penrose pseudo-inverse) or statistical (e.g., ordinary-least-squares regression) 
 to solve for the parameters quickly. 
 This tiny machine learning demo with two parameters and eight data points scales, 
 however, to millions of parameters and millions of data points. 
@@ -73,7 +73,7 @@ print("yhat: =", yhat)
 '''
 #**Step 2**: Compare $\hat{y}$ with true $y$ to calculate cost $C$
 
-#There is a PyTorch `MSELoss` method, but let's define it outselves to see how it works. MSE cost is defined by: $$C = \frac{1}{n} \sum_{i=1}^n (\hat{y_i}-y_i)^2 $$
+#There is a PyTorch `MSELoss` method, but let's define it out selves to see how it works. MSE cost is defined by: $$C = \frac{1}{n} \sum_{i=1}^n (\hat{y_i}-y_i)^2 $$
 '''
 
 def mse(my_yhat, my_y):
@@ -83,7 +83,7 @@ def mse(my_yhat, my_y):
 C = mse(yhat, y)
 print("Cost: =",C)
 
-"""**Step 3**: Use autodiff to calculate gradient of $C$ w.r.t. parameters"""
+"""**Step 3**: Use auto-diff to calculate gradient of $C$ w.r.t. parameters"""
 
 C.backward()
 
