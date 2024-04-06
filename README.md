@@ -1,6 +1,6 @@
 # Machine_Learning_starter
 
-<h2>BEGINEER LEVEL:</h2>
+<h2>BEGINNER LEVEL:</h2>
 
 
 <h3>1. Math Fundamentals:</h3>
