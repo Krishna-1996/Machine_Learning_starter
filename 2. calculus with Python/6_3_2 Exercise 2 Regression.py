@@ -15,8 +15,9 @@ y_score = torch.tensor(scores) + torch.normal(mean= torch.zeros(50), std = 0.2)
 print("y_score: ",y_score)
 
 #Lets plot a graph with x and y including 0.2 std noise.
-fig, ax = plt.subplot()
+fig, ax = plt.subplots()
 plt.title("More hours of study, More score you get")
 plt.xlabel("Hours--->")
 plt.ylabel("Score--->")
 _ = ax.scatter(x_hours, y_score)
+plt.show()
