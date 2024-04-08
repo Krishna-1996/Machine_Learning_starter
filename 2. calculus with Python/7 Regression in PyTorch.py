@@ -59,7 +59,8 @@ regression_plot(x, y, m, b)
 plt.show()
 print("Basic done here ")
 
-"""*Return to slides here if following *Calculus I* class.**
+"""
+*Return to slides here if following *Calculus I* class.**
 
 ### Machine Learning
 In four easy steps :)
