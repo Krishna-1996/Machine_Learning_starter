@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 x = torch.tensor([0, 1, 2, 3, 4, 5, 6, 7.]) # E.g.: Dosage of drug for treating Alzheimer's disease
 print("x: =",x)
 
-"""The $y$ values were created using the equation of a line $y = mx + b$. This way, we know what the model parameters to be learned are, say, $m = -0.5$ and $b = 2$. Random, normally-distributed noise has been added to simulate sampling error:"""
+"""The 'y' values were created using the equation of a line $y = mx + b$. This way, we know what the model parameters to be learned are, say, $m = -0.5$ and $b = 2$. Random, normally-distributed noise has been added to simulate sampling error:"""
 
 y = -0.5*x + 2 + torch.normal(mean=torch.zeros(8), std=0.2)
 
