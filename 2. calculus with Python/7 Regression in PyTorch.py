@@ -1,4 +1,4 @@
-# 6_3 Regression in PyTorch:
+# 6_3 Regression in PyTorch:___
 
 import torch
 import matplotlib.pyplot as plt
