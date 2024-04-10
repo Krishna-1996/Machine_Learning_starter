@@ -26,8 +26,12 @@ print("Equation ==> z = (x^2 - y^2)")
 #define function for the Equation
 def func(my_x, my_y):#z = x**2 -y**2
     return my_x**2 - my_y**2 
+
 #define all the x values 1000 from -3 to +3.
 xs = np.linspace(-3, 3, 1000)
+
+zs_wrt_xs = func(xs,0)
+print(zs_wrt_xs)
 
 
 
