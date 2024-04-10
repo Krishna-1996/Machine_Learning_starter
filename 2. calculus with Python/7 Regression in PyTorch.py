@@ -135,13 +135,5 @@ print("Adjusted 'b': = ",b.item())
 """**N.B.**: The model doesn't perfectly approximate the slope (-0.5) and $y$-intercept (2.0) used to simulate the outcomes $y$ at the top of this notebook. This reflects the imperfectness of the sample of eight data points due to adding random noise during the simulation step. In the real world, the best solution would be to sample additional data points: The more data we sample, the more accurate our estimates of the true underlying parameters will be."""
 
 
-# 8. ML Gradient:
-'''
---> Partial Derivative of Multi variant Function
---> Partial Derivative Chain Rule
---> Quadratic Cost
---> Gradients
---> Gradient Descent
---> Back-Propagation
-'''
+
 
