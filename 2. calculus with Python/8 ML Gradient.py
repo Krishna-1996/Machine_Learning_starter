@@ -31,7 +31,13 @@ def func(my_x, my_y):#z = x**2 -y**2
 xs = np.linspace(-3, 3, 1000)
 
 zs_wrt_xs = func(xs,0)
-print(zs_wrt_xs)
+#Plot the above data
+plt.plot(xs,zs_wrt_xs)
+plt.vlines(x = 0, colors="lightgrey")
+plt.hlines(y = 0, colors="lightgrey")
+plt.xlabel("x values-->")
+plt.ylabel("z values-->")
+plt.show()
 
 
 
