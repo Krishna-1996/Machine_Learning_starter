@@ -8,3 +8,26 @@
 --> Back-Propagation
 '''
 # 1. Partial Derivative of Multi variant Function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
