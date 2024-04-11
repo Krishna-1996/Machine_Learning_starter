@@ -5,7 +5,7 @@
 --> 3. Quadratic Cost:
 --> 4. Gradients:
 --> 5. Gradient Descent:
---> Back-Propagation
+--> 6. Back-Propagation:
 '''
 # 1. Partial Derivative of Multi variant Function
 
