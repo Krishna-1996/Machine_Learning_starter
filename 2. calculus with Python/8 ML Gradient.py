@@ -1,6 +1,6 @@
 # 8. ML Gradient:
 '''
---> Partial Derivative of Multi variant Function
+--> 1. Partial Derivative of Multi variant Function:
 --> Partial Derivative Chain Rule
 --> Quadratic Cost
 --> Gradients
