@@ -3,7 +3,7 @@
 --> 1. Partial Derivative of Multi variant Function:
 --> 2. Partial Derivative Chain Rule:
 --> 3. Quadratic Cost:
---> Gradients
+--> 4. Gradients:
 --> Gradient Descent
 --> Back-Propagation
 '''
