@@ -10,24 +10,24 @@ x = sp.Symbol('x')
 def f(x):
     return x**2 + 3*x + 2
 
-# Differentiation using SymPy
+# Differentiation using SymPy:
 f_prime = sp.diff(f(x), x)
 
-# Integration using SymPy
+# Integration using SymPy:
 F = sp.integrate(f(x), x)
 
-# Solve equation using SymPy
+# Solve equation using SymPy:
 equation = sp.Eq(f(x), 0)
 solution = sp.solve(equation, x)
 
-# Numerical differentiation (using finite differences) with NumPy
+# Numerical differentiation (using finite differences) with NumPy:
 def numerical_derivative(f, x, h=1e-6):
     return (f(x + h) - f(x)) / h
 
 x_value = 2
 derivative_at_x = numerical_derivative(f, x_value)
 
-# Numerical integration (using NumPy's trapz method for numerical integration)
+# Numerical integration (using NumPy's trapz method for numerical integration):
 x_values = np.linspace(0, 1, 100)
 y_values = f(x_values)
 integral_value = np.trapz(y_values, x=x_values)
