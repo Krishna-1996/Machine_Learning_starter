@@ -40,7 +40,7 @@ plt.xlabel("x values--> ")
 plt.ylabel("z values--> ")
 #plt.show()
 
-#Determine the slope:
+# Determine the slope:
 print("'z' w.r.t 'x'") #dz/dx = 2x
 def delz_delx(my_x,my_y):
     return my_x*2 #y = 0(constant)
