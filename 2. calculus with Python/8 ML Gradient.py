@@ -9,7 +9,7 @@
 '''
 # 1. Partial Derivative of Multi variant Function
 
-#Single Regression
+# Single Regression
 '''
 z = (x^2 - y^2)
 Let's y = zero(constant)
