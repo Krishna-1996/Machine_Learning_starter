@@ -24,7 +24,7 @@ import math # for constant pi.
 
 
 print("Equation ==> z = (x^2 - y^2)")
-#define function for the Equation:
+# Define function for the Equation:
 def func(my_x, my_y):#z = x**2 -y**2
     return my_x**2 - my_y**2 
 
