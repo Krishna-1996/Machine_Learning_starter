@@ -37,7 +37,7 @@ plt.plot(xs,zs_wrt_xs)
 plt.axvline(x=0, color="lightgrey")  # Vertical line at x = 0
 plt.axhline(y=0, color="lightgrey")  # Horizontal line at y = 0
 plt.xlabel("x values--> ")
-plt.ylabel("z values-->")
+plt.ylabel("z values--> ")
 #plt.show()
 
 #Determine the slope:
