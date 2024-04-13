@@ -11,7 +11,7 @@ y = x**2
 y.backward()#use auto-diff(dy/dx)
 print(x.grad)
 
-#Lets plot the slop as well
+# Lets plot the slop as well
 import numpy as np
 import matplotlib.pylab as plt
 #define the function f(x) = x^2:
