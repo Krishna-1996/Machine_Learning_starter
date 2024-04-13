@@ -17,13 +17,13 @@ import matplotlib.pylab as plt
 #define the function f(x) = x^2:
 def f(x):
     return x**2
-#Define its derivative dy/dx = 2x:
+# Define its derivative dy/dx = 2x:
 def df(x):
     return 2*x
-#Generate x values:
+# Generate x values:
 x_values = np.linspace(-5, 5, 100)
 
-#Calculate y values for both f(x) and its derivative
+# Calculate y values for both f(x) and its derivative
 y_values_f = f(x_values)
 y_values_df = df(x_values)
 
