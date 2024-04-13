@@ -3,7 +3,7 @@ import torch
 import matplotlib.pyplot as plt
 
 
-#Comment:  Adding and Testing
+# Comment:  Adding and Testing
 
 # Generate an array with 50 score = x values
 hours = [random.randint(0, 9) for _ in range(50)]
