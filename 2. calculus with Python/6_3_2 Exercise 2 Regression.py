@@ -28,7 +28,7 @@ b = 3
 def reg(my_x, my_m, my_b):
     return my_m*my_x + my_b
 
-#plot the slope:
+# Plot the slope:
 def reg_plot(my_x, my_y, my_m, my_b):
     x_min, x_max = my_x.min().item(), my_x.max().item()
     y_min = reg(x_min, my_m, my_b)
