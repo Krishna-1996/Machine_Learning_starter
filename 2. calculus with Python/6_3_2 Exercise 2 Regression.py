@@ -24,7 +24,7 @@ plt.scatter(x_hours, y_score)
 
 m = 2
 b = 3
-#initialize the slope:
+# Initialize the slope:
 def reg(my_x, my_m, my_b):
     return my_m*my_x + my_b
 
