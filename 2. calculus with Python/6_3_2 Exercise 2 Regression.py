@@ -15,7 +15,7 @@ x_hours = torch.tensor(hours)
 y_score = torch.tensor(x_hours**2 + 2*x_hours + 3) + torch.normal(mean= torch.zeros(50), std = 0.2)
 #print("y_score: ",y_score)
 
-#Lets plot a graph with x and y including 0.2 std noise.
+# Lets plot a graph with x and y including 0.2 std noise.
 
 plt.title("More hours of study, More score you get")
 plt.xlabel("Hours--->")
