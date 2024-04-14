@@ -61,7 +61,7 @@ print("Basic done here ")
 """
 *Return to slides here if following *Calculus I* class.**
 
-### Machine Learning
+### "Machine Learning"
 In four easy steps :)
 
 *** Step 1*: Forward pass
