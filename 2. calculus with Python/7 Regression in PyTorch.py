@@ -72,9 +72,9 @@ yhat = regression(x, m, b)
 print("yhat: =", yhat)
 
 '''
-#**Step 2**: Compare $\hat{y}$ with true $y$ to calculate cost $C$
-
-#There is a PyTorch `MSELoss` method, but let's define it out selves to see how it works. MSE cost is defined by: $$C = \frac{1}{n} \sum_{i=1}^n (\hat{y_i}-y_i)^2 $$
+**Step 2**: Compare $\hat{y}$ with true $y$ to calculate cost $C$
+There is a PyTorch `MSELoss` method, but let's define it out selves to see how it works. 
+MSE cost is defined by: $$C = \frac{1}{n} \sum_{i=1}^n (\hat{y_i}-y_i)^2 $$
 '''
 
 def mse(my_yhat, my_y):
@@ -99,7 +99,7 @@ optimizer = torch.optim.SGD([m, b], lr=0.01)
 
 optimizer.step()#will adjust the above method
 
-"""Confirm parameters have been adjusted sensibly:"""
+""" Confirm parameters have been adjusted sensibly:"""
 
 print("Will adjust this much m: ",m)
 print("Will adjust this much b: ",b)
@@ -112,7 +112,7 @@ C = mse(regression(x, m, b), y)#cost after single adjustment
 print("New reduce 'Cost' after changing the parameter m and b:")
 print("New reduce Cost: =",C)
 
-"""Put the 4 steps in a loop to iteratively minimize cost toward zero:"""
+""" Put the 4 steps in a loop to iteratively minimize cost toward zero:"""
 
 epochs = 1000
 for epoch in range(epochs):
