@@ -14,7 +14,7 @@ print(x.grad)
 # Lets plot the slop as well
 import numpy as np
 import matplotlib.pylab as plt
-#define the function f(x) = x^2:
+# Define the function f(x) = x^2:
 def f(x):
     return x**2
 # Define its derivative dy/dx = 2x:
