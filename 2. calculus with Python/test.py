@@ -34,3 +34,5 @@ reg_plot(x_hours, noisy_scores, m, b)
 plt.show()
 
 print("Basic done here ")
+
+print()
