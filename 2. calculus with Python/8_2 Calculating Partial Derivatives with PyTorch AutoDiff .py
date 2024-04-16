@@ -4,10 +4,10 @@ import torch
 import math # for constant pi.
 
 # Define x and y 
-x = torch.tensor(0.).requires_grad()
-print(x)
-y = torch.tensor(0.).requires_grad()
-print(y)
+x = torch.tensor(0.).requires_grad_()
+print("x: ",x)
+y = torch.tensor(0.).requires_grad_()
+print("y: ",y)
 
 # Given an Equation
 print("Equation ==> z = (x^2 - y^2)")
@@ -19,3 +19,10 @@ def func(my_x, my_y):#z = x**2 -y**2
 z = func(x,y)#z wrt to x and y
 
 z.backward()#AutoDiff
+
+print(z)
+
+x.grad
+y.grad
+print("x: ",x)
+print("y: ",y)
