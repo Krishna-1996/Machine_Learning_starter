@@ -1,3 +1,4 @@
+# 8_2 Calculating Partial Derivatives with PyTorch AutoDiff 
 import numpy as np
 import matplotlib.pyplot as plt
 import torch
