@@ -1,4 +1,3 @@
-# 8_1. Partial Derivative of Multi variant Function
 '''
 --> 1. Partial Derivative of Multi variant Function:
 --> 2. Partial Derivative Chain Rule:
@@ -7,7 +6,7 @@
 --> 5. Gradient Descent:
 --> 6. Back-Propagation:
 '''
-# 1. Partial Derivative of Multi variant Function
+# 8_1. Partial Derivative of Multi variant Function
 
 # Single Regression
 '''
