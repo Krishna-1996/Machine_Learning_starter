@@ -1,0 +1,17 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import torch
+import math # for constant pi.
+
+# Define x and y 
+x = torch.tensor(0.).requires_grad()
+print(x)
+y = torch.tensor(0.).requires_grad()
+print(y)
+
+# Given an Equation
+print("Equation ==> z = (x^2 - y^2)")
+# Define function for the Equation:
+def func(my_x, my_y):#z = x**2 -y**2
+    return my_x**2 - my_y**2 
+z = f(x,y)
