@@ -11,7 +11,11 @@ print(y)
 
 # Given an Equation
 print("Equation ==> z = (x^2 - y^2)")
+
 # Define function for the Equation:
 def func(my_x, my_y):#z = x**2 -y**2
     return my_x**2 - my_y**2 
-z = f(x,y)
+
+z = func(x,y)#z wrt to x and y
+
+z.backward()#AutoDiff
