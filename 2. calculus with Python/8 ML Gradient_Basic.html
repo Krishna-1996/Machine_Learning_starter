@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MACHINE LEARNING GRADIENT</title>
     <style>
+        /* CSS styling for the ordered list */
+  ol {
+    list-style-type: none;
+    counter-reset: item;
+    padding-left: 0;
+  }
+  li {
+    counter-increment: item;
+    margin-bottom: 10px;
+  }
+  li::before {
+    content: counter(item) ". ";
+    font-weight: bold;
+    margin-right: 5px;
+  }
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
@@ -29,6 +44,14 @@
 </head>
 <body>
     <h1>Machine Learning Gradient</h1>
+    <ol>
+        <li>Partial Derivative of Multi variant Function:</li>
+        <li>Partial Derivative Chain Rule:</li>
+        <li>Quadratic Cost:</li>
+        <li>Gradients:</li>
+        <li>Gradient Descent:</li>
+        <li>Back-Propagation:</li>
+      </ol>
 
     <h2>1. Partial Derivative of Multi variant Function:</h2>
     <p>A partial derivative of a multi variable function measures how the function changes with respect to one of its variables while keeping the other variables constant. It essentially describes the rate of change of the function along a specific direction in its domain.</p>
