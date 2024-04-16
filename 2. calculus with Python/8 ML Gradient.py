@@ -1,4 +1,4 @@
-# 8. ML Gradient:
+# 8_1. Partial Derivative of Multi variant Function
 '''
 --> 1. Partial Derivative of Multi variant Function:
 --> 2. Partial Derivative Chain Rule:
