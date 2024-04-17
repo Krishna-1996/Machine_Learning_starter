@@ -35,7 +35,8 @@ dv/dr = 2 * pi *l
 
 delta = 1e-6
 print((vol(3+delta,5)-vol(3,5))/delta)
-#divi
+#dividing by delta with restore the scale 
+
 
 
 
