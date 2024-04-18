@@ -24,6 +24,6 @@ x2 = torch.tensor(5.).requires_grad_()
 y2 = torch.tensor(0.).requires_grad_()
 
 z_x = z_wrt_x(x2, y2)
-print("Change in z wrt to x :",z_x)
+print("Change in z w.r.t to x :",z_x)
 
     
