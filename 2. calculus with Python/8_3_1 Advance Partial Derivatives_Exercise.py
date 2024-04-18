@@ -19,7 +19,7 @@ print("Change in z wrt to y :",z_y)
 def z_wrt_x(my_x, my_y):
     return 5 *my_y # y is constant here 0
 
-# Let suppose x = 0 : y = 5
+# Let suppose x = 5 : y = 0
 x2 = torch.tensor(5.).requires_grad_()
 y2 = torch.tensor(0.).requires_grad_()
 
