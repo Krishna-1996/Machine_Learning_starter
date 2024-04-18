@@ -9,6 +9,11 @@ import torch
 def z_wrt_y(my_x, my_y):
     return 3 * my_y**2 + 5 # x is constant here 0
 
+# Let suppose x = 0 : y = 5
+x = torch.tensor(0.).requires_grad_()
+y = torch.tensor(5.).requires_grad_()
 
+z_y = z_wrt_y(x,y)
+print(z_y)
 
     
