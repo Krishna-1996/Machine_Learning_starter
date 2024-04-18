@@ -14,7 +14,7 @@ x1 = torch.tensor(0.).requires_grad_()
 y1 = torch.tensor(5.).requires_grad_()
 
 z_y = z_wrt_y(x1, y1)
-print("Change in z wrt to y :",z_y)
+print("Change in z w.r.t to y :",z_y)
 # dz/dx = 5y (Change in z w.r.t to change in x value)
 def z_wrt_x(my_x, my_y):
     return 5 *my_y # y is constant here 0
