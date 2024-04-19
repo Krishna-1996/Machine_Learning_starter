@@ -1,1 +1,1 @@
-# 8_4 Recap Linear Regression
+# 8_4 Recap Linear Regression Point by point
