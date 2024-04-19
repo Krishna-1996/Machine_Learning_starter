@@ -23,3 +23,8 @@ print(yhat)
 
 #compare yhat with y to calculate cost "c"
 # We use mean square error 
+def mn_sq_err(my_yhat, my_y):
+    return (my_yhat-my_y)**2
+
+c = mn_sq_err(yhat, y)
+print("Cost: ",c)
