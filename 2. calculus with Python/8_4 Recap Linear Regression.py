@@ -28,3 +28,9 @@ def mn_sq_err(my_yhat, my_y):
 
 c = mn_sq_err(yhat, y)
 print("Cost: ",c)
+
+#Autodiff
+c.backward()
+m.grad
+b.grad
+print("Cost: ",c,"m: ", m,"b: ",b)
