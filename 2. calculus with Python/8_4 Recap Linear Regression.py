@@ -20,6 +20,7 @@ i = 7
 x = xs[i]
 y = ys[i]
 
+# Step 4
 yhat = reg(x,m,b)
 print(yhat)
 
