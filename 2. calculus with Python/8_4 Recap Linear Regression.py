@@ -1,4 +1,4 @@
-# 8_4 Recap Linear Regression Point by point
+# 8_4 Recap of Linear Regression Point by point
 
 import torch
 # Step 1
