@@ -21,7 +21,7 @@ y = ys[i]
 yhat = reg(x,m,b)
 print(yhat)
 
-#compare yhat with y to calculate cost "c"
+# compare yhat with y to calculate cost "c"
 # We use mean square error 
 def mn_sq_err(my_yhat, my_y):
     return (my_yhat-my_y)**2
