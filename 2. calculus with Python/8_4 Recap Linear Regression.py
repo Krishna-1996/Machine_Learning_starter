@@ -33,6 +33,7 @@ def mn_sq_err(my_yhat, my_y):
 c = mn_sq_err(yhat, y)
 print("Cost: ",c)
 
+# Step 6
 # Auto-Diff
 c.backward()
 m.grad
