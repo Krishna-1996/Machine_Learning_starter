@@ -13,7 +13,7 @@ def reg(my_x, my_m, my_b):
 #provide m and b value random as 0.9, 0.1 respectively 
 m = torch.tensor([0.9]).requires_grad_()
 b = torch.tensor([0.1]).requires_grad_()
-# mark for single instance
+# Mark for single instance
 i = 7
 x = xs[i]
 y = ys[i]
