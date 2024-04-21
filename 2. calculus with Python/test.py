@@ -13,7 +13,7 @@ b = 3
 # Plot the scatter plot
 plt.title("More hours of study, More score you get")
 plt.xlabel("Hours---> ")
-plt.ylabel("Score--->")
+plt.ylabel("Score---> ")
 plt.scatter(x_hours, noisy_scores)
 
 # Define the regression function
