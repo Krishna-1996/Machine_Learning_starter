@@ -20,11 +20,11 @@ i = 7
 x = xs[i]
 y = ys[i]
 
-# Step 4
+# Step 4:
 yhat = reg(x,m,b)
 print(yhat)
 
-# Step 5
+# Step 5:
 # Compare yhat with y to calculate cost "c"
 # We use mean square error 
 def mn_sq_err(my_yhat, my_y):
@@ -33,7 +33,7 @@ def mn_sq_err(my_yhat, my_y):
 c = mn_sq_err(yhat, y)
 print("Cost: ",c)
 
-# Step 6
+# Step 6:
 # Auto-Diff
 c.backward()
 m.grad
