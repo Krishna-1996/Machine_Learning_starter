@@ -11,7 +11,7 @@ noisy_scores = original_scores + torch.normal(mean=torch.zeros(50), std=0.2)
 m = 2
 b = 3
 # Plot the scatter plot
-plt.title("More hours of study, More score you get")
+plt.title("More hours of study, More score you get Hence ")
 plt.xlabel("Hours---> ")
 plt.ylabel("Score---> ")
 plt.scatter(x_hours, noisy_scores)
