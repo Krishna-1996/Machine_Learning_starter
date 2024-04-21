@@ -1,6 +1,6 @@
 # 8_3 Advance Partial Derivatives_Exercise
 '''
-Partial Derivative Exercise for :
+ Partial Derivative Exercise for :
 z = y^3 + 5xy
 '''
 import torch 
