@@ -5,11 +5,11 @@ import torch
 import math # for constant pi.
 
 '''
-Volume of Cylinder = pi * r^2 * l
+1. Volume of Cylinder = pi * r^2 * l
 
-We need to find the change in vol w.r.t change in l 
+2. We need to find the change in vol w.r.t change in l 
 
-It means we need to know partial derivative of dv/dl
+3. It means we need to know partial derivative of dv/dl
 
 '''
 def vol(my_r, my_l):
