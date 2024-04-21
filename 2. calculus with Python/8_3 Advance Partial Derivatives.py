@@ -1,4 +1,4 @@
-# 8_3 Advance Partial Derivatives
+# 8_3 Advance Partial Derivatives...
 import numpy as np
 #import matplotlib.pyplot as plt
 import torch
@@ -31,6 +31,7 @@ print(v_diff)
 r.grad
 '''
 dv/dr = 2 * pi *l
+
 '''
 
 delta = 1e-6
