@@ -52,7 +52,7 @@ plt.ylabel('y')#label y
 plt.grid(True)
 plt.title('Plot of y = x**2 + 2*x +2')#title of curve
 
-#Step 2: The location of p is (2,10) and q is (5,37)
+#Step 4: The location of p is (2,10) and q is (5,37)
 plt.scatter(2,10)
 plt.scatter(2.1,10.61)
 #Step 3: Find slope m between p and q.
