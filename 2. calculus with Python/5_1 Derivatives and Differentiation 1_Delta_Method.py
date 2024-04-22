@@ -34,7 +34,7 @@ plt.scatter(2,10)
 plt.scatter(5,37)
 plt.scatter(2.1,10.61)
 
-#Step 3: Find slope m between p and q.
+# Step 3: Find slope m between p and q.
 #Find value of m(slope) : m = ∆y/∆x => (y2-y1)/(x2-x1) => (37-10)/(5-2) => 27/3 => 9
 m = (37-10)/(5-2)
 #Step 4: Plot a line by using : y = mx + b => b = mx-y => 
