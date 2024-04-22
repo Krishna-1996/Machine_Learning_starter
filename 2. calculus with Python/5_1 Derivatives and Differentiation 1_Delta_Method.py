@@ -19,8 +19,8 @@ plt.ylabel('y')#label y
 plt.grid(True)
 plt.title('Plot of y = x**2 + 2*x +2')#title of curve
 
-#Lets identify the slope where x=2:
-#Step 1: Determine the y where x = 2:
+# Lets identify the slope where x=2:
+# Step 1: Determine the y where x = 2:
 p = fun(2)#y = 10
 q = fun(5)#y = 37
 r = fun(2.1)#y = 10.61
