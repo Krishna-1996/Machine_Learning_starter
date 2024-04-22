@@ -18,7 +18,7 @@ plt.title('Plot of y = x^2 + 2x + 2')#title of curve
 plt.grid(True)# Add grid:
 
 # plt.show()#show  curve
-# Zoom untile we get straight line
+# Zoom until we get straight line
 plt.xlim(-1.01,-0.99)
 plt.ylim(0.99,1.01)
 plt.show()#show  curve
