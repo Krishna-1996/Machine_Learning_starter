@@ -60,7 +60,8 @@ plt.scatter(2.1,10.61)
 #Find value of m(slope) : m = ∆y/∆x => (y2-y1)/(x2-x1) => (37-10)/(5-2) => 27/3 => 9
 m1 = (10.61-10)/(2.1-2)
 print("Slop of line is: ",m1)
-#Step 4: Plot a line by using : y = mx + b => b = mx-y => 
+
+# Step 4: Plot a line by using : y = mx + b => b = mx-y => 
 b = 10.61 - (m1*2.1)#x1 y1, x2 y2
 line_y1 = (m1*x) +b
 plt.xlim(-5, 10)
@@ -83,8 +84,8 @@ x2 = -1
 y2 = fun(x2)
 print("y = ", y2)#y = 1
 #Location of p1 = (-1,1 )
-#Step 2: Plot a location of p and p1
 
+#Step 2: Plot a location of p and p1
 plt.scatter(x1,y1)
 plt.scatter(x2,y2)
 
