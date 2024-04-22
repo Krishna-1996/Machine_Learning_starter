@@ -1,11 +1,11 @@
-#Delta Method(∆) is used to find the slope of a curve at any specific point.
+# Delta Method(∆) is used to find the slope of a curve at any specific point.
 '''
 dy/dx = lim(∆(x)->0 {(f(x+∆x)-f(x))/∆x}
 
 '''
 import numpy as np
 import matplotlib.pyplot as plt
-#Equation1: y = x**2 + 2*x +2
+# Equation1: y = x**2 + 2*x +2
 def fun(my_x):
     my_y = my_x**2 + 2*my_x + 2
     return my_y
