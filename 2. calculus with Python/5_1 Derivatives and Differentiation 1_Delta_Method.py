@@ -29,7 +29,7 @@ print(fun(2))
 print(fun(5))
 print(fun(2.1))
 
-#Step 2: The location of p is (2,10) and q is (5,37)
+# Step 2: The location of p is (2,10) and q is (5,37)
 plt.scatter(2,10)
 plt.scatter(5,37)
 plt.scatter(2.1,10.61)
