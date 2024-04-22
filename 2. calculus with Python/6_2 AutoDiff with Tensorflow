@@ -4,6 +4,7 @@ f(x) y = x^2
 dy/dx = 2x = 2(5) = 10
 '''
 import tensorflow as tf
+import math 
 x = tf.Variable(5.0)
  
 # Track the gradient
