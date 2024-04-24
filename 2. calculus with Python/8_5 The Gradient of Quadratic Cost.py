@@ -36,3 +36,4 @@ m.grad
 b.grad
 
 #Step 4: 
+# partial derivative of cost 'c' w.r.t m 
