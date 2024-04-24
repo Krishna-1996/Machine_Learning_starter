@@ -17,6 +17,14 @@ b = torch.tensor([0.1]).requires_grad_()
 
 #Step 1: Forward Pass
 yhat = reg(xs, m, b)
-print("yhat: "yhat)
+print("yhat: ", yhat)
 
 #Step 2: Compare yhat and actual y values and calculate cost "c".
+#We use Mean square error to do this.
+
+def mse(my_yhat, my_y):
+    sigma = torch.sum(my_yhat - my_y)**2
+    return sigma/len(my_y)
+
+c = mse(yhat, ys)
+print("Cost: ", c)
