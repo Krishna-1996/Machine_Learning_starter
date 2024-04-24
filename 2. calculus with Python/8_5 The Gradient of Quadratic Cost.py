@@ -28,3 +28,9 @@ def mse(my_yhat, my_y):
 
 c = mse(yhat, ys)
 print("Cost: ", c)
+
+#Step 3: Auto-Diff
+c.backward()
+print(c)
+m.grad
+b.grad
