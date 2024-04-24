@@ -9,4 +9,5 @@ ys = torch.tensor([-1.9875, -1.7832, -0.0041, 0.00, 0.0100, 0.0341, 1.3453, 2.43
 def reg(my_x, my_m, my_b):
     return my_x*my_x + my_b
 
-m = 
+m = torch.tensor([0.9]).requires_grad_()
+b = torch.tensor([0.1]).requires_grad_()
