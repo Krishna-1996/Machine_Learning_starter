@@ -34,3 +34,5 @@ c.backward()
 print(c)
 m.grad
 b.grad
+
+#Step 4: 
