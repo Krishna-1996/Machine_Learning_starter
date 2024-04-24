@@ -36,4 +36,14 @@ m.grad
 b.grad
 
 #Step 4: 
-# partial derivative of cost 'c' w.r.t m 
+# partial derivative of cost 'c' w.r.t 'm'.
+pd_m = 2*(1/len(ys)) * torch.sum((yhat-ys)*xs)
+pd_b = 2*(1/len(ys)) * torch.sum((yhat-ys))
+
+#check m.grad = pd_m and b.grad = pd_b
+print("m.grad = ", m.grad)
+print("pd_m = ", pd_m)
+print("----------------------")
+print("b.grad = ", b.grad)
+print("pd_b = ", pd_b)
+
