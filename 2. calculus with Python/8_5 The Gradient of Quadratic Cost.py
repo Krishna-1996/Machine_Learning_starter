@@ -1,5 +1,5 @@
 # 8_5 : The Gradient of Cost on Batch of Data 
-
+#Import libraries
 import torch
 import matplotlib.pyplot as plt
 
@@ -11,3 +11,4 @@ def reg(my_x, my_m, my_b):
 
 m = torch.tensor([0.9]).requires_grad_()
 b = torch.tensor([0.1]).requires_grad_()
+
