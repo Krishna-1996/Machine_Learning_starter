@@ -17,4 +17,6 @@ b = torch.tensor([0.1]).requires_grad_()
 
 #Step 1: Forward Pass
 yhat = reg(xs, m, b)
-print(yhat)
+print("yhat: "yhat)
+
+#Step 2: Compare yhat and actual y values and calculate cost "c".
