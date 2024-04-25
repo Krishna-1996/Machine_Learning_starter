@@ -35,7 +35,7 @@ print(c)
 m.grad
 b.grad
 
-#Step 4: 
+# Step 4: 
 # partial derivative of cost 'c' w.r.t 'm'.
 pd_m = 2*1/len(ys) * torch.sum((yhat-ys)*xs)
 pd_b = 2*1/len(ys) * torch.sum((yhat-ys))
