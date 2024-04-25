@@ -15,7 +15,7 @@ def reg(my_x, my_m, my_b):
 m = torch.tensor([0.9]).requires_grad_()
 b = torch.tensor([0.1]).requires_grad_()
 
-#Step 1: Forward Pass
+# Step 1: Forward Pass
 yhat = reg(xs, m, b)
 print("yhat: ", yhat)
 
