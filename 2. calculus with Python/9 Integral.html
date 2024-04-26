@@ -66,12 +66,9 @@
         <h1>SEGMENT 3: INTEGRALS</h1>
         <h2>Topics Covered:</h2>
         <ul>
-            <li>Binary Classification</li>
-            <li>The Confusion Matrix</li>
-            <li>The Receiver-Operating Characteristic (ROC) Curve</li>
-            <li>Calculating Integrals Manually</li>
-            <li>Numeric Integration with Python</li>
-            <li>Finding the Area Under the ROC Curve</li>
+            <li><strong>Binary Classification:</strong> Binary classification is a type of machine learning task where the goal is to classify elements into one of two classes.</li>
+            <li><strong>The Confusion Matrix:</strong> A confusion matrix is a table used in classification to evaluate the performance of a predictive model.</li>
+            <li><strong>The Receiver-Operating Characteristic (ROC) Curve:</strong></li>
         </ul>
 
         <h2>Example Code:</h2>
@@ -94,8 +91,15 @@ print("Estimated error:", error)
 
         <h2>ROC Curve Example:</h2>
         <img src="https://docs.eyesopen.com/python_modules/cookbook/_images/roc-theory-small.png" alt="IMAGE NOT FOUND">
-
-        <p style="text-align: center;"></p>
+        <p style="text-align: center;">Image source: OpenEye Scientific Software</p>
+        <ul>
+            <li>The ROC curve is a graphical plot that illustrates the diagnostic ability of a binary classifier system.</li>
+            <li>The x-axis represents the False Positive Rate (FPR), while the y-axis represents the True Positive Rate (TPR).</li>
+            <li>A point (x, y) on the ROC curve represents the performance of the classifier at a particular threshold value.</li>
+            <li>A random classifier would have a diagonal ROC curve (the dashed line) where the True Positive Rate equals the False Positive Rate.</li>
+            <li>A classifier with perfect discrimination would have a ROC curve that passes through the top-left corner, indicating a high True Positive Rate and a low False Positive Rate across all threshold values.</li>
+            <li>The area under the ROC curve (AUC) is often used as a single metric to evaluate the overall performance of a classifier. A higher AUC value indicates better discrimination ability of the model.</li>
+        </ul>
     </div>
 </body>
 </html>
