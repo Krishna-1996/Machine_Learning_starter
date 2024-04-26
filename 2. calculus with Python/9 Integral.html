@@ -3,9 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Binary Classification Tutorial</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        li::before {
+            content: "• ";
+            color: #007bff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .code-example {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    </style>
 </head>
 <body>
-    
+    https://www.google.com/search?sca_esv=5fa93554276c39d0&sca_upv=1&sxsrf=ACQVn0-5uF3ystwX0h8wsIyce8werLEu9Q:1714098315112&q=roc+curve+example+in+python&uds=AMwkrPtpdSDwIKO34YFRJ20ePU3labsf55ll2G7r4pjBdWqS36GhAdH7RkiBCk0fZD2Z8xVdYAtcs0ultkxzO_8cSnh5UFwW5HxbsGU3Aqbe8bUPne1yTx23ZLjE1PD0bNJVuSEUb-Fzpcy6CTtYAOdalLsupttO2WrniC9wnWJklLysV4UKtmlIn3tOYK7iaJms0RrVnW75-ehOzx65jRgq2AQFFMEGOiKNTQ2zqVG478CorYzrCUILNh4qnhGuEY3StfIpYsNzSjWLI73cdL6bVyQaBtmNwPDoY0pzpZ_QIUYbajzZ59WRb-FdPgGUX04xTp_n5xtw&udm=2&prmd=ivsnbmtz&sa=X&ved=2ahUKEwiIprrp6d6FAxWN-DgGHWK2D_AQtKgLegQIEBAB&biw=1366&bih=641&dpr=1#vhid=jlJirbA_vYLgQM&vssid=mosaic /*
+    <div class="container">
+        <h1>Binary Classification Tutorial</h1>
+        <h2>Topics Covered:</h2>
+        <ul>
+            <li>Binary Classification</li>
+            <li>The Confusion Matrix</li>
+            <li>The Receiver-Operating Characteristic (ROC) Curve</li>
+            <li>Calculating Integrals Manually</li>
+            <li>Numeric Integration with Python</li>
+            <li>Finding the Area Under the ROC Curve</li>
+        </ul>
+
+        <h2>Example Code:</h2>
+        <div class="code-example">
+            <pre>
+                <code>
+# Python code for numeric integration
+import numpy as np
+from scipy.integrate import quad
+
+def integrand(x):
+    return np.sin(x)
+
+result, error = quad(integrand, 0, np.pi)
+print("Result of integration:", result)
+print("Estimated error:", error)
+                </code>
+            </pre>
+        </div>
+
+        <h2>ROC Curve Example:</h2>
+        <img src="roc_curve_example.png" alt="ROC Curve Example">
+
+        <p style="text-align: center;">Image source: Your Source</p>
+    </div>
 </body>
 </html>
