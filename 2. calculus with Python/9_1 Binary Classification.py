@@ -7,3 +7,5 @@ def g(x):
 y = quad(g,1,2)
 print(y)
 '''output would be 0.75 which is = to 3/4'''
+
+#Another example
