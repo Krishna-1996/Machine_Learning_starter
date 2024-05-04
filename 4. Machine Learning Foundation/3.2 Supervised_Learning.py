@@ -8,3 +8,7 @@ print(column_names)
 # convert the dataset into binary 0 or 1 for better understanding 
 df = pd.get_dummies(df, columns=['mainroad'])
 df = pd.get_dummies(df, columns=['mainroad'])
+df = pd.get_dummies(df, columns=['mainroad'])
+df = pd.get_dummies(df, columns=['mainroad'])
+df = pd.get_dummies(df, columns=['mainroad'])
+df = pd.get_dummies(df, columns=['mainroad'])
