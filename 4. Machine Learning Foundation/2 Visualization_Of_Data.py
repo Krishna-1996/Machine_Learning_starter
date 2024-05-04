@@ -12,4 +12,12 @@ plt.hist(titanic['Survived'], bins =2, color='blue')
 plt.xlabel('Survived')
 plt.ylabel('Frequency')
 plt.title('Titanic Survivors')
-plt.show()
+#plt.show()
+
+#do this with class also
+
+#Co-relation Matrix:  A matrix that shows the relation between multiple parameter and their dependency
+import seaborn as sns
+corr_matric = titanic.corr()
+print(corr_matric)
+
