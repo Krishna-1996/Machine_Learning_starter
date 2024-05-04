@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Supervised Learning</title>
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(50px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  .container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease forwards;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+  h2 {
+    color: #009688;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .sub-heading {
+    margin-left: 20px;
+    color: #555;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .list-item {
+    margin-left: 40px;
+    color: #777;
+    font-size: 18px;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease forwards;
+  }
+  ol {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  ol li {
+    margin-top: 10px;
+  }
+  a {
+    color: #009688;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #00796b;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Supervised Learning</h1>
+  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231121154747/Supervised-learning.png" alt="Simple Linear Regression">
+  <p>Supervised learning is a type of machine learning where the algorithm is trained on a labeled dataset, meaning each input data point is associated with a corresponding target value. The goal of supervised learning is to learn a mapping from input variables to output variables based on the labeled training data.</p>
+
+  <p>In supervised learning, the algorithm learns from examples provided in the form of input-output pairs. It tries to approximate the mapping function so that when presented with new input data, it can predict the output accurately.</p>
+
+  <p>There are two main types of supervised learning:</p>
+
+  <ol>
+    <li><strong>Regression:</strong> Regression models are used when the target variable is continuous. The goal is to predict a continuous value output based on input features. Examples include predicting house prices based on features like area, number of bedrooms, etc.</li>
+    <li><strong>Classification:</strong> Classification models are used when the target variable is categorical. The goal is to predict the class or category of the input data. Examples include spam detection, sentiment analysis, and image classification.</li>
+  </ol>
+  
+  <h2>Linear Regression</h2>
+  <div class="sub-heading">a. Simple Linear Regression</div>
+  <p class="list-item">Simple linear regression is a linear approach to modeling the relationship between a dependent variable and one independent variable.</p>
+  <img src="https://www.scribbr.com/wp-content/uploads//2020/02/simple-linear-regression-graph.png" alt="Simple Linear Regression">
+
+  <div class="sub-heading">b. Multiple Linear Regression</div>
+  <p class="list-item">Multiple linear regression is an extension of simple linear regression that predicts a dependent variable using multiple independent variables.</p>
+  <img src="https://www.researchgate.net/publication/374010617/figure/fig1/AS:11431281189688323@1695128366480/Simple-and-Multiple-Linear-Regression-Structure.png" alt="Multiple Linear Regression">
+
+  <h2>Logistic Regression</h2>
+  <div class="sub-heading">a. Binary Logistic Regression</div>
+  <p class="list-item">Binary logistic regression is used to model the probability of a binary outcome based on one or more predictor variables.</p>
+  <img src="https://miro.medium.com/v2/resize:fit:700/1*VKOyjAsJtaR5fY_ENnampQ.jpeg" alt="Binary Logistic Regression">
+
+  <div class="sub-heading">b. Multinomial Logistic Regression</div>
+  <p class="list-item">Multinomial logistic regression is used to model the probability of multiple classes of outcomes based on predictor variables.</p>
+  <img src="https://www.gstatic.com/education/formulas2/multinomial_logistic_regression.svg" alt="Multinomial Logistic Regression">
+
+  <p>For more information, you can visit: <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPiruDyiOV_8DQCHY_Uj-76dgSGlFLn3G5qCE9-3NdIw&s" target="_blank">Linear Regression</a> and <a href="https://en.wikipedia.org/wiki/Logistic_regression" target="_blank">Logistic Regression</a>.</p>
+</div>
+
+</body>
+</html>
