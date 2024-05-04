@@ -19,3 +19,4 @@ data.drop(colm_to_drops,axis = 1)#Entirely drop the column
 
 # lets suppose we dont want to drop an entire column if it has some missing values.
 # So, we use mean/median feature to fill that missing value's space.
+data['price'].fillna(data['price'].mean()) #data.['columntofill'].fillnafunction(data.['columntofill'].bymean/median())
