@@ -1,7 +1,6 @@
 # 1. Data_Preparation The_Foundation_of_ML
 
 #Import necessary libraries
-from re import I
 import pandas as pd
 
 #Import csv data file
