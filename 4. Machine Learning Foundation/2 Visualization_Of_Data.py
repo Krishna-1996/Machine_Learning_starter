@@ -25,7 +25,9 @@ corr_matrix = titanic[numeric_cols].corr()
 
 #add a heatmap in this
 plt.figure(figsize = (10,8))
-sns.heatmap(corr_matrix, annot= True, cmap = 'coolwarm', fnt = '.2f')
+sns.heatmap(corr_matrix, annot= True, cmap = 'coolwarm', fmt = '.2f')
 plt.show()
+#Done visualization of Dataset with histogram and heatmap
+
 
 
