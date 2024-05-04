@@ -18,6 +18,14 @@ plt.title('Titanic Survivors')
 
 #Co-relation Matrix:  A matrix that shows the relation between multiple parameter and their dependency
 import seaborn as sns
-corr_matric = titanic.corr()
-print(corr_matric)
+numeric_cols = titanic.select_dtypes(include=['float64', 'int64']).columns 
+#due to some error need to find the solution 
+corr_matrix = titanic[numeric_cols].corr()
+#print(corr_matrix)
+
+#add a heatmap in this
+plt.figure(figsize = (10,8))
+sns.heatmap(corr_matrix, annot= True, cmap = 'coolwarm', fnt = '.2f')
+plt.show()
+
 
