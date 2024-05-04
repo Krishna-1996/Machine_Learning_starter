@@ -10,4 +10,4 @@ print(data.info())# column details
 
 #Dealing with missing value 
 #first check any missing values
-missing_values = data.notnull.sum()
+missing_values = data.isnull().sum()
