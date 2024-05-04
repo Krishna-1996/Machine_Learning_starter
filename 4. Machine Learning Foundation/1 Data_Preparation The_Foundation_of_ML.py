@@ -32,13 +32,19 @@ here outlier is 100 because it is beyond the average of our dataset
 import seaborn as sns
 import matplotlib.pyplot as plt
 sns.boxplot(x = 'price',data=data)
-plt.show()
+#plt.show()
 
 #Some outlier in the price
 Q1 = data['price'].quantile(0.25)
 Q3 = data['price'].quantile(0.75)
 IQR = Q3-Q1
-print(IQR)
+print(IQR) #106.0
+
+#Remove extra outlier
+clean_data = data[(data['price']>Q1 - 1.5*IQR) & (data['price']<Q3 + 1.5*IQR)]
+print(clean_data)
+sns.boxplot(x = 'price',data=clean_data)
+plt.show()
 
 
 
