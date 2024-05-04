@@ -10,3 +10,4 @@ print(data.info())# column details
 
 #Dealing with missing value 
 #first check any missing values
+0
