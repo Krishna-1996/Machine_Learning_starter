@@ -15,4 +15,7 @@ print(missing_values)#x column has y missing values
 
 #If we want to remove/ drop any column(here missing values columns)
 colm_to_drops = ['id','host_name','last_review','reviews_per_month']
-data.drop(colm_to_drops,axis = 1)
+data.drop(colm_to_drops,axis = 1)#Entirely drop the column
+
+# lets suppose we dont want to drop an entire column if it has some missing values.
+# So, we use mean/median feature to fill that missing value's space.
