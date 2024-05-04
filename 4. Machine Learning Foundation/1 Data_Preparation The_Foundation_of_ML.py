@@ -46,5 +46,23 @@ print(clean_data)
 sns.boxplot(x = 'price',data=clean_data)
 plt.show()
 
+#Another method: Clipping the data caped
+lower_Bound = 0
+upper_Bound = 1000
+data['price'] = data['price'].apply(lambda x : lower_Bound if  x < lower_Bound else (upper_Bound if x > upper_Bound else x ))
+sns.boxplot(x = 'price',data=data)
+plt.show()
+
+#Another Method : Logarithm Transformation
+import numpy as np
+data['price'] = np.log(data['price'] + 1)
+sns.boxplot(x = 'price',data=data)
+plt.show()
+
+#Change the entire room_type into binary to better understanding of the data 
+encoded_data = pd.get_dummies(data, columns=['room_type'])
+print(encoded_data.head())
+
+
 
 
