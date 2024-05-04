@@ -13,5 +13,6 @@ data = pd.read_csv("E:/Machine Learning/Machine Learning/AB_NYC_2019.csv")
 missing_values = data.isnull().sum()
 print(missing_values)#x column has y missing values
 
+#If we want to remove/ drop any column(here missing values columns)
 colm_to_drops = ['id','host_name','last_review','reviews_per_month']
 data.drop(colm_to_drops,axis = 1)
