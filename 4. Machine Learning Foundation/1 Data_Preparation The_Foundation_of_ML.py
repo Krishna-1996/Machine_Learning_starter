@@ -1,6 +1,7 @@
 # 1. Data_Preparation The_Foundation_of_ML
 
 #Import necessary libraries
+from re import I
 import pandas as pd
 
 #Import csv data file
@@ -26,5 +27,18 @@ data['price'].fillna(data['price'].mean()) #data.['columntofill'].fillnafunction
 Eg: data = 1,4,6,3,8,9,4,6,100,3,2,6,5,8,3,6,1,9,4
 here outlier is 100 because it is beyond the average of our dataset 
 '''
-#Manage outlier 
+#Manage outlier (detect and correct them by using python library)
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+sns.boxplot(x = 'price',data=data)
+plt.show()
+
+#Some outlier in the price
+Q1 = data['price'].quantile(0.25)
+Q3 = data['price'].quantile(0.75)
+IQR = Q3-Q1
+print(IQR)
+
+
 
