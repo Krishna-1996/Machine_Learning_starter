@@ -4,10 +4,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #Import csv data file
-data = pd.read_csv("E:/Machine Learning/Machine Learning/train.csv")
+titanic = pd.read_csv("E:/Machine Learning/Machine Learning/train.csv")
+#print(data.head())
 
 #Plot a histogram
-plt.hist(data['survived'], bin=2, color='blue')
+plt.hist(titanic['Survived'], bins =2, color='blue')
 plt.xlabel('Survived')
 plt.ylabel('Frequency')
 plt.title('Titanic Survivors')
