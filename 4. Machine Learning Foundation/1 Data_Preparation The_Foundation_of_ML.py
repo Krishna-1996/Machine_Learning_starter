@@ -20,3 +20,11 @@ data.drop(colm_to_drops,axis = 1)#Entirely drop the column
 # lets suppose we dont want to drop an entire column if it has some missing values.
 # So, we use mean/median feature to fill that missing value's space.
 data['price'].fillna(data['price'].mean()) #data.['columntofill'].fillnafunction(data.['columntofill'].bymean/median())
+
+#OUTLIERS
+'''
+Eg: data = 1,4,6,3,8,9,4,6,100,3,2,6,5,8,3,6,1,9,4
+here outlier is 100 because it is beyond the average of our dataset 
+'''
+#Manage outlier 
+
