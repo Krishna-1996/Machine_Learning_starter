@@ -7,3 +7,5 @@ import pandas as pd
 data = pd.read_csv("E:/Machine Learning/Machine Learning/AB_NYC_2019.csv")
 #print(data.head())# give full table 
 print(data.info())# column details 
+
+#Deal with missing value 
