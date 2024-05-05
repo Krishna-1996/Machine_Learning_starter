@@ -42,7 +42,6 @@ model = LogisticRegression()
 model.fit(x_train_scaler, y_train)
 predicted = model.predict(x_test_scaler)
 
- #EXTRA
- #plot this data now
-import matplotlib.pyplot as plt
-plt.figure(figsize=(10,6))
+from sklearn.metrics import accuracy_score
+accuracy = accuracy_score(y_test, predicted)
+print("Accuracy:", accuracy)
