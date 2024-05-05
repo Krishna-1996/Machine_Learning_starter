@@ -1,5 +1,5 @@
 # 3.2 SUPERVISED LEARNING
-# Single Variant Linear Regression Model:
+# A==> Single Variant Linear Regression Model:
 import pandas as pd
 df = pd.read_csv("E:/Machine Learning/Machine Learning/house_prices.csv")
 # print(df) # print the dataset
@@ -39,6 +39,26 @@ model.fit(x, price) # type: ignore
 new_area = np.array([[1900]])
 predicted_price = model.predict(new_area)
 print(predicted_price)
+
+# B==> Multi Variant Linear Regression Model:
+'''
+Here we discuss and design a model which reflect the multi variant LRM. 
+How multiple parameter effect the prediction value.
+'''
+from sklearn.model_selection import train_test_split
+
+#for this case extract all the feature except price
+features = df.drop('price').values
+
+#Split data into training and testing values
+x_train, x_test, y_train, y_test = train_test_split(features, price, test_size=0.2, random_state=42)
+
+#Create and train the LR model
+model = LinearRegression()
+model.fit(x_train, y_train)
+print(model.fit)
+
+
 
 
 
