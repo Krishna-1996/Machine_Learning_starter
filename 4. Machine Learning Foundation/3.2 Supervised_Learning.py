@@ -65,10 +65,19 @@ prediction_price = model.predict(x_test)
 # 1. Scatter Plot
 import matplotlib.pyplot as plt
 plt.figure(figsize=(10,6))
-plt.scatter(x_test, prediction_price, color='blue')
+plt.scatter(y_test, prediction_price, color='blue')
 plt.title('Scatter_Plot: Actual_Price Vs Predicted_Price')
 plt.xlabel('Actual_Price')
 plt.ylabel('Predicted_Price')
+plt.grid(True)
+plt.show()
+
+# 2. Scatter Plot
+residual  = y_test - prediction_price
+plt.scatter(prediction_price, residual, color='red')
+plt.title('Scatter_Plot: Predicted_Price Vs Residual')
+plt.xlabel('Predicted_Price')
+plt.ylabel('Residual')
 plt.grid(True)
 plt.show()
 
