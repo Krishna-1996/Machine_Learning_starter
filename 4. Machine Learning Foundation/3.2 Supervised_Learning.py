@@ -61,24 +61,25 @@ model.fit(x_train, y_train)
 #make prediction
 prediction_price = model.predict(x_test)
 
-#Plotting Time
-# 1. Scatter Plot
+# Plotting Time
+
 import matplotlib.pyplot as plt
-plt.figure(figsize=(10,6))
+# 1. Scatter Plot:  Actual_Price Vs Predicted_Price
+plt.figure(figsize=(10, 6))
 plt.scatter(y_test, prediction_price, color='blue')
-plt.title('Scatter_Plot: Actual_Price Vs Predicted_Price')
-plt.xlabel('Actual_Price')
-plt.ylabel('Predicted_Price')
-plt.grid(True)
+plt.title('Scatter Plot: Actual Price Vs Predicted Price', fontsize=14, fontweight='bold')
+plt.xlabel('Actual Price', fontsize=12)
+plt.ylabel('Predicted Price', fontsize=12)
+plt.grid(True, linestyle='--', alpha=0.7)
 plt.show()
 
-# 2. Scatter Plot
-residual  = y_test - prediction_price
+# 2. Scatter Plot: Predicted_Price Vs Residual
+residual = y_test - prediction_price
 plt.scatter(prediction_price, residual, color='red')
-plt.title('Scatter_Plot: Predicted_Price Vs Residual')
-plt.xlabel('Predicted_Price')
-plt.ylabel('Residual')
-plt.grid(True)
+plt.title('Scatter Plot: Predicted Price Vs Residual', fontsize=14, fontweight='bold')
+plt.xlabel('Predicted Price', fontsize=12)
+plt.ylabel('Residual', fontsize=12)
+plt.grid(True, linestyle='--', alpha=0.7)
 plt.show()
 
 
