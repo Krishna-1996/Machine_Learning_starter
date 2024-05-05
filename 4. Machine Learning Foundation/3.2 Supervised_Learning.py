@@ -1,5 +1,6 @@
 # 3.2 SUPERVISED LEARNING
 # A==> Single Variant Linear Regression Model:
+from turtle import color
 import pandas as pd
 df = pd.read_csv("E:/Machine Learning/Machine Learning/house_prices.csv")
 # print(df) # print the dataset
@@ -64,7 +65,13 @@ prediction_price = model.predict(x_test)
 # 1. Scatter Plot
 import matplotlib.pyplot as plt
 plt.figure(figsize=(10,6))
-plt.scatter(x_test, prediction_price)
+plt.scatter(x_test, prediction_price, color='blue')
+plt.title('Scatter_Plot: Actual_Price Vs Predicted_Price')
+plt.xlabel('Actual_Price')
+plt.ylabel('Predicted_Price')
+plt.grid(True)
+plt.show()
+
 
 
 
