@@ -79,5 +79,3 @@ conf_metr = confusion_matrix(y_test, predicted)
 print("e. Confusion Metrics: ")
 print(conf_metr)
 
-# 2. Validation
-from sklearn.model_selection import KFold
