@@ -68,16 +68,16 @@ model.fit(x_train, y_train)
 predicted_price = model.predict(x_test)
 # print('prediction_price: ',prediction_price)
 
-#MeTRICS
-# 1. MEAN ABSOLUTE ERROR 
+#METRICS
+# a. MEAN ABSOLUTE ERROR 
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 msa = mean_absolute_error(y_test, predicted_price)
 print('mean_absolute_error: ',msa)
 
-# 2. MEAN SQUARE ERROR
+# b. MEAN SQUARE ERROR
 mse = mean_squared_error(y_test, predicted_price)
 print('mean_squared_error: ',mse)
 
-# 3. R2 SCORE
+# c. R2 SCORE
 r2 = r2_score(y_test, predicted_price)
 print('r2_score: ',r2)
