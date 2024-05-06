@@ -1,13 +1,12 @@
-# 4. Model _Evaluation_and_Optimization
+# 4.1 Model _Evaluation_and_Optimization
 '''
 A. Matrices
 B. Cross Validation
 C. Over-fitting and Under-fitting
 D. Hyper Parameter Tunning
 '''
-# Different metrics used in different Regression.
-#1. With Linear Regression
-print("# 1. With Linear Regression")
+
+print("Different metrics used in Linear Regression")
 import pandas as pd
 df = pd.read_csv("E:/Machine Learning/Machine Learning/house_prices.csv")
 
@@ -35,19 +34,6 @@ How much price 'x' would be if the area is 'y'....?
 area = df['area'].values
 price = df['price'].values
 
-#reshare the data for 1 Dimension 
-x = area.reshape(-1,1) # type: ignore
-
-#Create and train the LR model
-model = LinearRegression()
-model.fit(x, price) # type: ignore
-
-#predict the price as according to the given area.Eg: 1900
-new_area = np.array([[1900]])
-predicted_price_at_1900_area = model.predict(new_area)
-#print("predicted_price_at_1900_are: = a", predicted_price_at_1900_area)
-
-# B==> Multi Variant Linear Regression Model:
 '''
 Here we discuss and design a model which reflect the multi variant LRM. 
 How multiple parameter effect the prediction value.
@@ -82,23 +68,5 @@ print('b. mean_squared_error: ',mse)
 r2 = r2_score(y_test, predicted_price)
 print('c. r2_score: ',r2)
 
-#2. With Logistic Regression
-print("# 2. With Logistic Regression")
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
-print("METRICS")
-# a. ACCURACY SCORE 
-msa = mean_absolute_error(y_test, predicted_price)
-print('a. mean_absolute_error: ',msa)
 
-# b. PRECISION SCORE
-mse = mean_squared_error(y_test, predicted_price)
-print('b. mean_squared_error: ',mse)
-
-# c. RECALL SCORE
-r2 = r2_score(y_test, predicted_price)
-print('c. r2_score: ',r2)
-
-# D. F1 SCORE
-r2 = r2_score(y_test, predicted_price)
-print('c. r2_score: ',r2)

@@ -56,55 +56,89 @@
             color: #e9c46a;
             font-weight: bold;
         }
+        .styled-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .styled-list li {
+            margin-bottom: 10px;
+        }
+        .styled-list li:before {
+            content: "•";
+            color: #2a9d8f;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
     </style>
 </head>
 <body>
-    <h1>Linear and Logistic Regression</h1>
+    <h1>4. Model _Evaluation_and_Optimization</h1>
 
     <div class="section">
-        <h2>Linear Regression</h2>
+        <h2>1. Linear Regression</h2>
         <p>
-            <span class="metrics">Metrics:</span> In linear regression, common metrics include:
-            <ul>
-                <li><strong>Mean Squared Error (MSE):</strong> Represents the average squared difference between the actual and predicted values. Lower values indicate better performance.</li>
-                <li><strong>Root Mean Squared Error (RMSE):</strong> Similar to MSE, but the square root is taken to make the error metric interpretable in the same units as the target variable.</li>
-                <li><strong>Mean Absolute Error (MAE):</strong> Measures the average absolute difference between the actual and predicted values. Like MSE, lower values are better.</li>
-                <li><strong>R-squared (R²) score:</strong> Represents the proportion of the variance in the dependent variable that is predictable from the independent variables. Ranges from 0 to 1; higher values indicate better fit.</li>
-                <li><strong>Adjusted R-squared:</strong> Similar to R-squared, but it adjusts for the number of predictors in the model. It's particularly useful when comparing models with different numbers of predictors.</li>
-            </ul>
+            <h3 class="metrics">Metrics:</h3> 
+            <ol class="styled-list">
+                <li><STRONG>A. Mean Squared Error (MSE):</STRONG>Represents the average squared difference between the actual and predicted values. Lower values indicate better performance.</li>
+                <li><strong>B. Root Mean Squared Error (RMSE): </strong>Similar to MSE, but the square root is taken to make the error metric interpretable in the same units as the target variable.</li>
+                <li><strong>C. Mean Absolute Error (MAE): </strong>Measures the average absolute difference between the actual and predicted values. Like MSE, lower values are better.</li>
+                <li><strong>D. R-squared (R²) score:</strong> Represents the proportion of the variance in the dependent variable that is predictable from the independent variables. Ranges from 0 to 1; higher values indicate better fit.</li>
+                <li><strong>E. Adjusted R-squared: </strong>Similar to R-squared, but it adjusts for the number of predictors in the model. It's particularly useful when comparing models with different numbers of predictors.</li>
+            </ol>
         </p>
         <p>
-            <span class="cv">Cross Validation:</span> Techniques like k-fold cross-validation are used to assess how well a model trained on one subset of the data generalizes to an independent dataset.
+            <h3 class="cv">Cross Validation:</h3> 
+            <ol class="styled-list">
+                <li>Techniques like k-fold cross-validation are used to assess how well a model trained on one subset of the data generalizes to an independent dataset.</li>
+            </ol>
         </p>
         <p>
-            <span class="overfit">Overfitting or Underfitting Models:</span> Overfitting occurs when the model captures noise in the training data, while underfitting occurs when the model is too simple to capture the underlying structure of the data.
+            <h3 class="overfit">Over-Fitting or Under-Fitting Models:</h3> 
+            <ol class="styled-list">
+                <li>Overfitting occurs when the model captures noise in the training data, while underfitting occurs when the model is too simple to capture the underlying structure of the data.</li>
+            </ol>
         </p>
         <p>
-            <span class="tuning">Hyperparameter Tuning:</span> Techniques like Ridge Regression and Lasso Regression have hyperparameters that need to be tuned. For example, in Ridge Regression, the hyperparameter alpha controls the strength of regularization.
+            <h3 class="tuning">Hyperparameter Tuning:</h3> 
+            <ol class="styled-list">
+                <li>Techniques like Ridge Regression and Lasso Regression have hyperparameters that need to be tuned. For example, in Ridge Regression, the hyperparameter alpha controls the strength of regularization.</li>
+            </ol>
         </p>
     </div>
 
     <div class="section">
-        <h2>Logistic Regression</h2>
+        <h2>2. Logistic Regression</h2>
         <p>
-            <span class="metrics">Metrics:</span> For logistic regression, common metrics include:
-            <ul>
-                <li><strong>Accuracy:</strong> Measures the proportion of correctly classified instances over the total instances. It's not suitable for imbalanced datasets.</li>
-                <li><strong>Precision:</strong> Indicates the proportion of true positive predictions over all positive predictions. It's useful when the cost of false positives is high.</li>
-                <li><strong>Recall (Sensitivity):</strong> Represents the proportion of actual positive instances that are correctly identified by the model. It's important when the cost of false negatives is high.</li>
-                <li><strong>F1-score:</strong> The harmonic mean of precision and recall. It provides a balance between precision and recall.</li>
-                <li><strong>ROC curve:</strong> Receiver Operating Characteristic curve plots the true positive rate (sensitivity) against the false positive rate (1 - specificity). It's used to visualize the performance of a classifier.</li>
-                <li><strong>Area Under the ROC Curve (AUC):</strong> Represents the area under the ROC curve. AUC close to 1 indicates a good model.</li>
-            </ul>
+            <h3 class="metrics">Metrics:</h3> 
+            <ol class="styled-list">
+                <li><strong>A. Accuracy: </strong>Measures the proportion of correctly classified instances over the total instances. It's not suitable for imbalanced datasets.</li>
+                <li><strong>B. Precision: </strong>Indicates the proportion of true positive predictions over all positive predictions. It's useful when the cost of false positives is high.</li>
+                <li><strong>C. Recall (Sensitivity): </strong>Represents the proportion of actual positive instances that are correctly identified by the model. It's important when the cost of false negatives is high.</li>
+                <li><strong>D. F1-score: </strong>The harmonic mean of precision and recall. It provides a balance between precision and recall.</li>
+                <li><strong>E. ROC curve: </strong>Receiver Operating Characteristic curve plots the true positive rate (sensitivity) against the false positive rate (1 - specificity). It's used to visualize the performance of a classifier.</li>
+                <li><strong>F. Area Under the ROC Curve (AUC): </strong>Represents the area under the ROC curve. AUC close to 1 indicates a good model.</li>
+            </ol>
         </p>
         <p>
-            <span class="cv">Cross Validation:</span> Cross-validation is used to evaluate model performance and to tune hyperparameters. Techniques like k-fold cross-validation are often used.
+            <h3 class="cv">Cross Validation:</h3> 
+            <ol class="styled-list">
+                <li>Cross-validation is used to evaluate model performance and to tune hyperparameters. Techniques like k-fold cross-validation are often used.</li>
+            </ol>
         </p>
         <p>
-            <span class="overfit">Overfitting or Underfitting Models:</span> Overfitting occurs when the model fits the training data too closely, and underfitting occurs when the model is too simple to capture the complexities of the data.
+            <h3 class="overfit">Overfitting or Underfitting Models:</h3> 
+            <ol class="styled-list">
+                <li>Overfitting occurs when the model fits the training data too closely, and underfitting occurs when the model is too simple to capture the complexities of the data.</li>
+            </ol>
         </p>
         <p>
-            <span class="tuning">Hyperparameter Tuning:</span> Hyperparameter tuning is crucial, especially when using regularization techniques like Lasso or Ridge. Techniques like Grid search or randomized search are used to find the best combination of hyperparameters.
+            <h3 class="tuning">Hyperparameter Tuning:</h3> 
+            <ol class="styled-list">
+                <li>Hyperparameter tuning is crucial, especially when using regularization techniques like Lasso or Ridge. Techniques like Grid search or randomized search are used to find the best combination of hyperparameters.</li>
+            </ol>
         </p>
     </div>
 </body>
