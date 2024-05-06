@@ -6,4 +6,4 @@ C. Over-fitting and Under-fitting
 D. Hyper Parameter Tunning
 '''
 # Different matrices used in different Regression.
-#1. With Linear 
+#1. With Linear Regression
