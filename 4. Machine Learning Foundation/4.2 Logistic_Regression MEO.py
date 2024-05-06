@@ -1,9 +1,9 @@
 # 4.2 Model _Evaluation_and_Optimization
 '''
-A. Accuracy_score
-B. Precision_score
-C. Recall_score
-D. F1_score
+1. Metrics
+2. Cross Validation
+3. Over-fitting and Under-fitting
+4. Hyper Parameter Tunning
 '''
 
 print("Different metrics used in Logistic Regression")
@@ -55,9 +55,9 @@ model = LogisticRegression()
 model.fit(X_train, y_train)
 predicted = model.predict(X_test)
 
+# # 1. METRICS
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
-
-print("METRICS")
+print("1. METRICS")
 # a. ACCURACY SCORE 
 acc_scr = accuracy_score(y_test, predicted)
 print('a. accuracy_score: ',acc_scr)
@@ -78,3 +78,6 @@ print('d. f1_score: ',f1_scr)
 conf_metr = confusion_matrix(y_test, predicted)
 print("e. Confusion Metrics: ")
 print(conf_metr)
+
+# 2. Validation
+from sklearn.model_selection import KFold

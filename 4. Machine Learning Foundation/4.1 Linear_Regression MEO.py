@@ -1,9 +1,9 @@
 # 4.1 Model _Evaluation_and_Optimization
 '''
-A. Matrices
-B. Cross Validation
-C. Over-fitting and Under-fitting
-D. Hyper Parameter Tunning
+1. Metrics
+2. Cross Validation
+3. Over-fitting and Under-fitting
+4. Hyper Parameter Tunning
 '''
 
 print("Different metrics used in Linear Regression")
