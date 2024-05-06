@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear and Logistic Regression</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 36px;
+            color: #2a9d8f;
+        }
+        h2 {
+            font-size: 24px;
+            color: #264653;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #2a9d8f;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .metrics {
+            font-weight: bold;
+            color: #2a9d8f;
+        }
+        .cv {
+            font-style: italic;
+            color: #2a9d8f;
+        }
+        .overfit {
+            color: #e76f51;
+            font-weight: bold;
+        }
+        .tuning {
+            color: #e9c46a;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Linear and Logistic Regression</h1>
+
+    <div class="section">
+        <h2>Linear Regression</h2>
+        <p>
+            <span class="metrics">Metrics:</span> In linear regression, common metrics include:
+            <ul>
+                <li><strong>Mean Squared Error (MSE):</strong> Represents the average squared difference between the actual and predicted values. Lower values indicate better performance.</li>
+                <li><strong>Root Mean Squared Error (RMSE):</strong> Similar to MSE, but the square root is taken to make the error metric interpretable in the same units as the target variable.</li>
+                <li><strong>Mean Absolute Error (MAE):</strong> Measures the average absolute difference between the actual and predicted values. Like MSE, lower values are better.</li>
+                <li><strong>R-squared (R²) score:</strong> Represents the proportion of the variance in the dependent variable that is predictable from the independent variables. Ranges from 0 to 1; higher values indicate better fit.</li>
+                <li><strong>Adjusted R-squared:</strong> Similar to R-squared, but it adjusts for the number of predictors in the model. It's particularly useful when comparing models with different numbers of predictors.</li>
+            </ul>
+        </p>
+        <p>
+            <span class="cv">Cross Validation:</span> Techniques like k-fold cross-validation are used to assess how well a model trained on one subset of the data generalizes to an independent dataset.
+        </p>
+        <p>
+            <span class="overfit">Overfitting or Underfitting Models:</span> Overfitting occurs when the model captures noise in the training data, while underfitting occurs when the model is too simple to capture the underlying structure of the data.
+        </p>
+        <p>
+            <span class="tuning">Hyperparameter Tuning:</span> Techniques like Ridge Regression and Lasso Regression have hyperparameters that need to be tuned. For example, in Ridge Regression, the hyperparameter alpha controls the strength of regularization.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Logistic Regression</h2>
+        <p>
+            <span class="metrics">Metrics:</span> For logistic regression, common metrics include:
+            <ul>
+                <li><strong>Accuracy:</strong> Measures the proportion of correctly classified instances over the total instances. It's not suitable for imbalanced datasets.</li>
+                <li><strong>Precision:</strong> Indicates the proportion of true positive predictions over all positive predictions. It's useful when the cost of false positives is high.</li>
+                <li><strong>Recall (Sensitivity):</strong> Represents the proportion of actual positive instances that are correctly identified by the model. It's important when the cost of false negatives is high.</li>
+                <li><strong>F1-score:</strong> The harmonic mean of precision and recall. It provides a balance between precision and recall.</li>
+                <li><strong>ROC curve:</strong> Receiver Operating Characteristic curve plots the true positive rate (sensitivity) against the false positive rate (1 - specificity). It's used to visualize the performance of a classifier.</li>
+                <li><strong>Area Under the ROC Curve (AUC):</strong> Represents the area under the ROC curve. AUC close to 1 indicates a good model.</li>
+            </ul>
+        </p>
+        <p>
+            <span class="cv">Cross Validation:</span> Cross-validation is used to evaluate model performance and to tune hyperparameters. Techniques like k-fold cross-validation are often used.
+        </p>
+        <p>
+            <span class="overfit">Overfitting or Underfitting Models:</span> Overfitting occurs when the model fits the training data too closely, and underfitting occurs when the model is too simple to capture the complexities of the data.
+        </p>
+        <p>
+            <span class="tuning">Hyperparameter Tuning:</span> Hyperparameter tuning is crucial, especially when using regularization techniques like Lasso or Ridge. Techniques like Grid search or randomized search are used to find the best combination of hyperparameters.
+        </p>
+    </div>
+</body>
+</html>

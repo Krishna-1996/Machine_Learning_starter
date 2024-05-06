@@ -5,7 +5,7 @@ B. Cross Validation
 C. Over-fitting and Under-fitting
 D. Hyper Parameter Tunning
 '''
-# Different matrices used in different Regression.
+# Different metrics used in different Regression.
 #1. With Linear Regression
 print("# 1. With Linear Regression")
 import pandas as pd
@@ -68,16 +68,37 @@ model.fit(x_train, y_train)
 predicted_price = model.predict(x_test)
 # print('prediction_price: ',prediction_price)
 
-#METRICS
+print("METRICS")
 # a. MEAN ABSOLUTE ERROR 
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 msa = mean_absolute_error(y_test, predicted_price)
-print('mean_absolute_error: ',msa)
+print('a. mean_absolute_error: ',msa)
 
 # b. MEAN SQUARE ERROR
 mse = mean_squared_error(y_test, predicted_price)
-print('mean_squared_error: ',mse)
+print('b. mean_squared_error: ',mse)
 
 # c. R2 SCORE
 r2 = r2_score(y_test, predicted_price)
-print('r2_score: ',r2)
+print('c. r2_score: ',r2)
+
+#2. With Logistic Regression
+print("# 2. With Logistic Regression")
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+
+print("METRICS")
+# a. ACCURACY SCORE 
+msa = mean_absolute_error(y_test, predicted_price)
+print('a. mean_absolute_error: ',msa)
+
+# b. PRECISION SCORE
+mse = mean_squared_error(y_test, predicted_price)
+print('b. mean_squared_error: ',mse)
+
+# c. RECALL SCORE
+r2 = r2_score(y_test, predicted_price)
+print('c. r2_score: ',r2)
+
+# D. F1 SCORE
+r2 = r2_score(y_test, predicted_price)
+print('c. r2_score: ',r2)
