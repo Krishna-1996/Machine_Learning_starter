@@ -27,23 +27,23 @@ new_data = data.drop(colm_to_drops,axis = 1)#Entirely drop the column
 print("dropping some data: ")
 print(new_data)
 
-'''
+
 # Sigmoid function:
 def sigmoid(z):
     return 1/(1+np.exp(-z))
 
 #If we want to remove/ drop any column(here missing values columns)
 
-# print(data.isnull().any()) #(No required as there is no null value)
-column_names = list(data.columns.values)
+# print(new_data.isnull().any()) #(No required as there is no null value)
+column_names = list(new_data.columns.values)
 print(column_names)# print all columns name
 
 
-# Extract features and labels from data
-features = data.drop('Exited', axis=1).values
-labels = data['Exited'].values
+# Extract features and labels from new_data
+features = new_data.drop('Exited', axis=1).values
+labels = new_data['Exited'].values
 
-#Split data for training and testing purpose
+#Split new_data for training and testing purpose
 X_train, X_test, y_train, y_test = train_test_split(features, labels, test_size=0.2, random_state=42)
 
 #Create and train the Logistic Regression
@@ -55,5 +55,5 @@ predicted = model.predict(X_test)
 from sklearn.metrics import accuracy_score
 accuracy  = accuracy_score(y_test, predicted)
 print("Accuracy:", accuracy)
-'''
+
 
