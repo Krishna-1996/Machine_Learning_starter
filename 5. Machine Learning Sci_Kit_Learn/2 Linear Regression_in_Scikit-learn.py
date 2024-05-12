@@ -28,9 +28,9 @@ model.fit(X_train, Y_train)
 print("intercept: ",model.intercept_)
 print("coefficient: ",model.coef_)
 
-
 # Model Prediction
-
+score = model.predict([[7.5]])
+print(score)
 
 
 
