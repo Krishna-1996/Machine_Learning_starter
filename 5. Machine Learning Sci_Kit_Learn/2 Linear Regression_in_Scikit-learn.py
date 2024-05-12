@@ -14,3 +14,4 @@ df.plot.scatter(x= 'petal width (cm)', y = 'petal length (cm)', title = 'Scatter
 print(df.corr())
 print(df.describe())
 
+# Preprocessing
