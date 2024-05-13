@@ -39,7 +39,9 @@ df_prec = pd.DataFrame({'Actual: ',Y_test.squeeze(), "Predicted: ",y_prec.squeez
 
 # Evaluate the Model
 from sklearn.metrics import mean_absolute_error, mean_squared_error
-mse
+mse = mean_squared_error(Y_test, y_prec)
+mae = mean_absolute_error(Y_test, y_prec)
+print("mean_absolute_error: "mae, "mean_squared_error: ",mse)
 
 
 
