@@ -34,8 +34,8 @@ print("coefficient: ",model.coef_)
 score = model.predict([[7.5]])
 print(score)
 
-
-
+y_prec = model.predict(X_test)
+df_prec = pd_data
 
 
 
