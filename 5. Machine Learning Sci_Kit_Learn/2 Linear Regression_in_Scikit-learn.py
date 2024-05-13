@@ -37,7 +37,8 @@ print(score)
 y_prec = model.predict(X_test)
 df_prec = pd.DataFrame({'Actual: ',Y_test.squeeze(), "Predicted: ",y_prec.squeeze()})
 
-#Evaluate the Model
+# Evaluate the Model
+
 
 
 
