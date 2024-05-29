@@ -1,7 +1,7 @@
 # 2. Linear Regression in Scikit-learn
 
 
- 
+# A. Single Linear Regression
 
 import pandas as pd
 from sklearn.datasets import load_iris
