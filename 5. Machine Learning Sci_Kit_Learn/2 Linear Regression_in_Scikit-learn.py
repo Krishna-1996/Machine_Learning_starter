@@ -1,6 +1,5 @@
 # 2. Linear Regression in Scikit-learn
 
-
 # A. Single Linear Regression
 
 import pandas as pd
