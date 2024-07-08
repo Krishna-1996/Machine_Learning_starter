@@ -10,4 +10,6 @@ Eg: Result for iris classification which has multiple result and there is no nat
 Eg: Result for which has level as good, better, best. 
 '''
 
- 3+ result and no natural ordering. 3+ result and no natural ordering.
+#coding:
+import numpy as np
+from sklearn.linear_model import LogisticRegression
