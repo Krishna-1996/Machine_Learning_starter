@@ -28,5 +28,11 @@ print(model.intercept_)
 print(model.coef_)
 
 # Predict
+p_pred = model.predict_proba(x)
+y_pred = model.predict(x)
+print(p_pred)
+print(y_pred)
+
+# Score
 
 
