@@ -37,4 +37,7 @@ print(y_pred)
 score = model.score(x,y)
 print(score)
 
+# Confusion_Metrics
+conf = 
+
 
