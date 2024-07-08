@@ -27,4 +27,6 @@ model.fit(x,y)
 print(model.intercept_)
 print(model.coef_)
 
+# Predict
+
 
