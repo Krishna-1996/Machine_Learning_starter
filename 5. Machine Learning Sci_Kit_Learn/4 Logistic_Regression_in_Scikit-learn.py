@@ -38,6 +38,36 @@ score = model.score(x,y)
 print(score)
 
 # Confusion_Metrics
-conf = 
+conf = confusion_matrix(y, y_pred)
+print(conf)
+
+# Report
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
