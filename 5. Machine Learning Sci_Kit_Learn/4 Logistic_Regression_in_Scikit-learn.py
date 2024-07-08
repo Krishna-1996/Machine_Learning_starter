@@ -34,5 +34,7 @@ print(p_pred)
 print(y_pred)
 
 # Score
+score = model.score(x,y)
+print(score)
 
 
