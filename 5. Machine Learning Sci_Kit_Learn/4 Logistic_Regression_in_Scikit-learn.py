@@ -14,7 +14,7 @@ Eg: Result for which has level as good, better, best.
 # Libraries
 import numpy as np
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report, confusion_matrix
 
 # Data
 x = np.arange(10).reshape(-1,1)
@@ -42,7 +42,8 @@ conf = confusion_matrix(y, y_pred)
 print(conf)
 
 # Report
-
+report = classification_report(y, y_pred)
+print(report)
 
 
 
