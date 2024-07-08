@@ -17,58 +17,30 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix
 
 # Data
-x = np.arange(10).reshape(-1,1)
-y = np.array([])
+x = np.arange(1000).reshape(-1, 1)
+y = np.random.randint(2, size=1000)  # Generating random 0 and 1 for y
 
 # Model
 model = LogisticRegression(solver='liblinear', C=10.0, random_state=0)
-model.fit(x,y)
+model.fit(x, y)
 
-print(model.intercept_)
-print(model.coef_)
+print("Intercept:", model.intercept_)
+print("Coefficients:", model.coef_)
 
 # Predict
 p_pred = model.predict_proba(x)
 y_pred = model.predict(x)
-print(p_pred)
-print(y_pred)
+print("Predicted Probabilities:", p_pred)
+print("Predicted Classes:", y_pred)
 
 # Score
-score = model.score(x,y)
-print(score)
+score = model.score(x, y)
+print("Score:", score)
 
-# Confusion_Metrics
+# Confusion Matrix
 conf = confusion_matrix(y, y_pred)
-print(conf)
+print("Confusion Matrix:\n", conf)
 
 # Report
 report = classification_report(y, y_pred)
-print(report)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("Classification Report:\n", report)
