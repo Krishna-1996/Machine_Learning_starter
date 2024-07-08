@@ -10,6 +10,9 @@ Eg: Result for iris classification which has multiple result and there is no nat
 Eg: Result for which has level as good, better, best. 
 '''
 
-#coding:
+# CODING
+# Libraries
 import numpy as np
 from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix
+
