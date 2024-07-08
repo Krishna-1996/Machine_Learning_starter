@@ -24,5 +24,6 @@ y = np.array([])
 model = LogisticRegression(solver='liblinear', C=10.0, random_state=0)
 model.fit(x,y)
 
+ 
 
 
