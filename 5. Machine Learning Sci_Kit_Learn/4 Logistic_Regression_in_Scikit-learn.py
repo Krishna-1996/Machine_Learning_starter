@@ -16,3 +16,13 @@ import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
 
+# Data
+x = np.arange(10).reshape(-1,1)
+y = np.array([])
+
+# Model
+model = LogisticRegression(solver='liblinear', C=10.0, random_state=0)
+model.fit(x,y)
+
+
+
