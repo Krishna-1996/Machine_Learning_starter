@@ -5,4 +5,6 @@ import pandas as pd
 
 wine = datasets.load_wine()
 df = pd.DataFrame(data=wine.data, columns=wine.feature_names)
-df.head ()
+print(df)
+
+# without pre-processing 
