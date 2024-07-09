@@ -38,4 +38,4 @@ y_pred2 = knn2.predict(x_test)
 # Check accuracy
 from sklearn import metrics
 print("Accuracy: ", metrics.accuracy_score(y_test, y_pred2))
-# Accuracy:  0.7037037037037037
+# Accuracy:  0.9814814814814815
