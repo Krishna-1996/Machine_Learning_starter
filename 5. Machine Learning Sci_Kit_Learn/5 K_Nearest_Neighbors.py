@@ -30,7 +30,7 @@ scalar.fit(wine.data)
 temp = scalar.fit_transform(wine.data)
 print(temp[:5])
 
-x_train, x_test, y_train, y_test = train_test_split(temp.wine, wine_target, test_size=0.3)
+x_train, x_test, y_train, y_test = train_test_split(temp, wine.target, test_size=0.3)
 knn2 = KNeighborsClassifier(n_neighbors=7)
 knn2.fit(x_train, y_train)
 y_pred2 = knn2.predict(x_test)
