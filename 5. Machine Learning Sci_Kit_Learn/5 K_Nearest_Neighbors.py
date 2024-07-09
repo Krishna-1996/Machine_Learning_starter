@@ -7,7 +7,7 @@ wine = datasets.load_wine()
 df = pd.DataFrame(data=wine.data, columns=wine.feature_names)
 print(df)
 
-# without pre-processing 
+# WITHOUT PRE-PROCESSING
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test  = train_test_split(wine.data, wine.target, test_size=0.3)
 
@@ -21,3 +21,11 @@ y_pred = knn.predict(x_test)
 from sklearn import metrics
 print("Accuracy: ", metrics.accuracy_score(y_test, y_pred))
 # Accuracy:  0.7037037037037037
+
+# WITH PRE-PROCESSING
+from sklearn import preprocessing
+from sklearn,preprocessing import preprocessing.MinMaxScaler
+scalar = MinMaxScaler()
+scalar.fit(wine.data)
+temp = scalar.fit_transform(wine.data)
+print(temp{:5})
