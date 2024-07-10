@@ -23,6 +23,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 print("Confusion_metrics: ", confusion_matrix(y_test, y_pred))
 print("classification_report: ", classification_report(y_test, y_pred))
 
+# plot the data 
 import matplotlib.pylab as plt
 from sklearn import metrics
 cm = confusion_matrix(y_test, y_pred)
