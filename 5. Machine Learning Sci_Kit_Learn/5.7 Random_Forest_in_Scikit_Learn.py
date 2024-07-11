@@ -3,6 +3,7 @@
 from logging import critical
 import pandas as pd
 import numpy as np
+from sympy import ComputationFailed
 
 dataset = pd.read_csv("E:/Machine Learning/Machine Learning/heart.csv")
 print(dataset.head(5))
@@ -21,4 +22,7 @@ classifier.fit(x_train, y_train)
 # Prediction
 y_pred = classifier.predict(x_test)
 
-
+from sklearn.metrics import confusion_matrix, accuracy_score
+cm = confusion_matrix (y_test, y_pred)
+print(" confusion_matrix: ", cm)
+accuracy = accuracy_score(y_test, y_pred)
