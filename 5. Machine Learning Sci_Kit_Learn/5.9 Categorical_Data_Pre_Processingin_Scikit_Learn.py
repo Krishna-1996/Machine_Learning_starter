@@ -21,4 +21,5 @@ arr = np.array(data)
 
 # Define the column names
 columns = ['Gender', 'Blood_Group', 'Edu_Level']
-print(arr)
+df = pd.DataFrame(arr, columns=columns)
+print(df)
