@@ -1,4 +1,4 @@
-# 5.9 Categorical_Data_Pre_Processingin_Scikit_Learn.py
+# 5.9 Categorical_Data_Pre_Processing_in_Sci-kit_Learn.py
 
 import pandas as pd
 import numpy as np
