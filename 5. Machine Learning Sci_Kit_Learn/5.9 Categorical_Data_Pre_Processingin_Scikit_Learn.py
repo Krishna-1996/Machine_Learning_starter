@@ -35,4 +35,10 @@ x = pd.DataFrame(np.array(['male', 'A+', 'high',
     'male', 'B+', 'low',
     'female', 'O+', 'high']).reshape(10,3))
 dx = x
-
+columns = ['gender', 'blood_group', 'edu_Level']
+df = pd.DataFrame(x, columns=columns)
+print("dataFrame: ")
+print(x)
+from sklearn.preprocessing import OrdinalEncoder
+encoder = OrdinalEncoder(dtype='int')
+x.edu_level = encoder.fit_transform(x.edu_level.values.reshape(-1,1))
