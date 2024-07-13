@@ -3,3 +3,4 @@
 import pandas as pd
 import numpy as np
 from sklearn.datasets import load_iris
+# 5.10.1 Discretization
