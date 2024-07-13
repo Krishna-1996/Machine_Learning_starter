@@ -7,16 +7,16 @@ print(df.head())
 
 from sklearn.preprocessing import StandardScaler
 scale = StandardScaler()
-print("StandardScaler: ",scale.fit_transform(df['petal length (cm)'].value.reshape(-1,1)))
+print("StandardScaler: ",scale.fit_transform(df['petal length (cm)'].values.reshape(-1,1)))
 
 from sklearn.preprocessing import MinMaxScaler
 scale = MinMaxScaler(feature_range=(-3,3))
-print("MinMaxScaler: ",scale.fit_transform(df['petal length (cm)'].value.reshape(-1,1)))
+print("MinMaxScaler: ",scale.fit_transform(df['petal length (cm)'].values.reshape(-1,1)))
 
 from sklearn.preprocessing import MaxAbsScaler
 scale = MaxAbsScaler()
-print("MaxAbsScaler: ",scale.fit_transform(df['petal length (cm)'].value.reshape(-1,1)))
+print("MaxAbsScaler: ",scale.fit_transform(df['petal length (cm)'].values.reshape(-1,1)))
 
 from sklearn.preprocessing import RobustScaler
 scale = RobustScaler(quantile_range=(0.3, 0.7))
-print("RobustScaler: ",scale.fit_transform(df['petal length (cm)'].value.reshape(-1,1)))
+print("RobustScaler: ",scale.fit_transform(df['petal length (cm)'].values.reshape(-1,1)))
