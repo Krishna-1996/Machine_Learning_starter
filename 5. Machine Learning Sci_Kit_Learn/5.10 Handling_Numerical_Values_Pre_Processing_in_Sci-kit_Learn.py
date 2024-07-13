@@ -1,5 +1,6 @@
 # 5.10 Handling_Numerical_Values_Pre_Processing_in_Sci-kit_Learn
 
+from cv2 import threshold
 import pandas as pd
 import numpy as np
 from sklearn.datasets import load_iris
@@ -16,3 +17,7 @@ bins = disc.bin_edges_
 print(bins)
 
 # 5.10.2 Binarization
+from sklearn.preprocessing import Binarizer
+print(df.head())
+b = Binarizer(threshold=5)
+b.fit_transform(df['sepal length (cm)'].values.reshape(-1,1))
