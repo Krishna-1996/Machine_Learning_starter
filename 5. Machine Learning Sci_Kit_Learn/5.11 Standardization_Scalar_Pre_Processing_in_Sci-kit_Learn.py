@@ -2,3 +2,5 @@
 import pandas as pd
 from sklearn.datasets import load_iris
 d = load_iris()
+df = pd.DataFrame(data = d.data, columns=d.feature_names)
+print(df.head())
