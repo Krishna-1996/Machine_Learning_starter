@@ -7,3 +7,4 @@ print(df.head())
 
 from sklearn.preprocessing import StandardScaler
 scale = StandardScaler()
+print(scale.fit_transform(df['petal length (cm)']))
