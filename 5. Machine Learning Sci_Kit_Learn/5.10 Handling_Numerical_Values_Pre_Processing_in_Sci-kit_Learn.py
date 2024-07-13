@@ -20,4 +20,4 @@ print(bins)
 from sklearn.preprocessing import Binarizer
 print(df.head())
 b = Binarizer(threshold=5)
-b.fit_transform(df['sepal length (cm)'].values.reshape(-1,1))
+print(b.fit_transform(df['sepal length (cm)'].values.reshape(-1,1)))
