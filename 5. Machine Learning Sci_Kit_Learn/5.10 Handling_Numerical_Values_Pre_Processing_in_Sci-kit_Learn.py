@@ -8,7 +8,11 @@ from sklearn.datasets import load_iris
 from sklearn.preprocessing import KBinsDiscretizer
 disc = KBinsDiscretizer(n_bins=3, encode='ordinal', strategy='uniform')
 d = load_iris()
-df = pd.DataFrame(data=data, columns=d.features_name)
+df = pd.DataFrame(data=d.data, columns=d.feature_names)
 print(df.head())
+
+disc.fit_transform(df) # This will transform
+bins = disc.bin_edges_
+print(bins)
 
 # 5.10.2 Binarization
