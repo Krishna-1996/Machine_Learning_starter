@@ -2,28 +2,7 @@
 
 import pandas as pd
 import numpy as np
-'''
-data = [
-    ['male', 'A+', 'high'],
-    ['female', 'B+', 'medium'],
-    ['male', 'A+', 'low'],
-    ['female', 'B+', 'high'],
-    ['male', 'O+', 'medium'],
-    ['female', 'A+', 'low'],
-    ['male', 'B+', 'high'],
-    ['female', 'A+', 'medium'],
-    ['male', 'B+', 'low'],
-    ['female', 'O+', 'high']
-]
 
-# Create a NumPy array
-arr = np.array(data)
-
-# Define the column names
-columns = ['Gender', 'Blood_Group', 'Edu_Level']
-df = pd.DataFrame(arr, columns=columns)
-print(df)
-'''
 x = pd.DataFrame(np.array(['male', 'A+', 'high',
     'female', 'B+', 'medium',
     'male', 'A+', 'low',
@@ -33,12 +12,16 @@ x = pd.DataFrame(np.array(['male', 'A+', 'high',
     'male', 'B+', 'high',
     'female', 'A+', 'medium',
     'male', 'B+', 'low',
-    'female', 'O+', 'high']).reshape(10,3))
+    'female', 'O+', 'high']).reshape(10, 3))
+
 dx = x
-columns = ['gender', 'blood_group', 'edu_Level']
-df = pd.DataFrame(x, columns=columns)
+
+x = pd.DataFrame(x, columns=['gender', 'blood_group', 'edu_Level'])
 print("dataFrame: ")
 print(x)
+
 from sklearn.preprocessing import OrdinalEncoder
 encoder = OrdinalEncoder(dtype='int')
-x.edu_level = encoder.fit_transform(x.edu_level.values.reshape(-1,1))
+# x['edu_Level'] = encoder.fit_transform(x['edu_Level'].values.reshape(-1, 1))
+
+
