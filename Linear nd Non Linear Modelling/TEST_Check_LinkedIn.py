@@ -2,7 +2,7 @@ import pandas as pd
 from linkedin_api import Linkedin
 
 # Initialize LinkedIn API with your credentials
-api = Linkedin('your_email', 'your_password')
+api = Linkedin('1904krishna@gmail.com', 'J@iShriKrishn@1996')
 
 # Data to be searched
 data = {
