@@ -84,5 +84,5 @@
 
 <h3>3. SPECIALIZATION:</h3>
 
-<p><b>Consider specializing in a particular domain like computer vision, natural language processing, or reinforcement learning based on your interests and career goals.
+<p><b>Consider specializing in a particular domain like computer vision, natural language processing, or reinforcement learning based on your interests and career goals...
 </b> </p>
