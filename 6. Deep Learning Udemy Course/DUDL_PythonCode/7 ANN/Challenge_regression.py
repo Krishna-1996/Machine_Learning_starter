@@ -84,6 +84,8 @@ def build_and_train_the_model(x,y):
     # plt.legend()
     # plt.show()
 
+
+# CREATE DATA FUNCTION.
 def create_Data(m):
     N = 50
     x = torch.randn(N,1)
