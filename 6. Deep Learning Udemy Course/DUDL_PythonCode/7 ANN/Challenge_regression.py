@@ -68,7 +68,7 @@ predictions = ANNreg(x)
 
 # final loss (MSE)
 testloss = (predictions-y).pow(2).mean()
-
+print(testloss)
 plt.plot(losses.detach(),'o',markerfacecolor='w',linewidth=.1)
 plt.plot(numepochs,testloss.detach(),'ro')
 plt.xlabel('Epoch')
@@ -78,7 +78,7 @@ plt.show()
 
 # ********************************************next
 testloss.item()
-
+print(testloss.item())
 # ********************************************next
 # plot the data
 plt.plot(x,y,'bo',label='Real data')
