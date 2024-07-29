@@ -94,11 +94,27 @@ def create_Data(m):
     return x, y
 
 # TEST IT ONCE
-x,y = create_Data(0.8)# m = 0.8 in function
-# run the model
-yHat, losses = build_and_train_the_model(x,y)
-fig,ax = plt.subplot
+# create a dataset
+x,y = create_Data(.8)
 
+# run the model
+yHat,losses = build_and_train_the_model(x,y)
+yHat = yHat.detach()
+
+fig,ax = plt.subplots(1,2,figsize=(12,4))
+
+ax[0].plot(losses.detach(),'o',markerfacecolor='w',linewidth=.1)
+ax[0].set_xlabel('Epoch')
+ax[0].set_title('Loss')
+
+ax[1].plot(x,y,'bo',label='Real data')
+ax[1].plot(x,yHat,'rs',label='Predictions')
+ax[1].set_xlabel('x')
+ax[1].set_ylabel('y')
+ax[1].set_title(f'prediction-data corr = {np.corrcoef(y.T,yHat.T)[0,1]:.2f}')
+ax[1].legend()
+
+plt.show()
 
 
 
