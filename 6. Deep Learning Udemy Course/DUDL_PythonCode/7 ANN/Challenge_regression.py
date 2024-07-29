@@ -49,17 +49,17 @@ def build_and_train_the_model(x,y):
     ## Train the model!
     for epochi in range(numepochs):
 
-    # forward pass
-    yHat = ANNreg(x)
+        # forward pass
+        yHat = ANNreg(x)
 
-    # compute loss
-    loss = lossfun(yHat,y)
-    losses[epochi] = loss
+        # compute loss
+        loss = lossfun(yHat,y)
+        losses[epochi] = loss
 
-    # backprop
-    optimizer.zero_grad()
-    loss.backward()
-    optimizer.step() 
+        # backprop
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step() 
 
     # ********************************************next
 
