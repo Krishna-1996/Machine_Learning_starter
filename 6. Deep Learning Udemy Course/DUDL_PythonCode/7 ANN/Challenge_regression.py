@@ -116,6 +116,7 @@ ax[1].legend()
 
 plt.show()
 
+# NOW THE EXPERIMENT TIME
 
 
 
