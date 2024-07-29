@@ -144,8 +144,21 @@ for slopei in range(len(slopes)):
 # correlation can be 0 if the model didn't do well. Set nan's->0
 results[np.isnan(results)] = 0
 
+# PLOT THE RESULT
+# plot the results!
 
+fig,ax = plt.subplots(1,2,figsize=(12,4))
 
+ax[0].plot(slopes,np.mean(results[:,:,0],axis=1),'ko-',markerfacecolor='w',markersize=10)
+ax[0].set_xlabel('Slope')
+ax[0].set_title('Loss')
+
+ax[1].plot(slopes,np.mean(results[:,:,1],axis=1),'ms-',markerfacecolor='w',markersize=10)
+ax[1].set_xlabel('Slope')
+ax[1].set_ylabel('Real-predicted correlation')
+ax[1].set_title('Model performance')
+
+plt.show()
 
 
 
