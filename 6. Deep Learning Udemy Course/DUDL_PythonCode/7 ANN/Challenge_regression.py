@@ -117,7 +117,32 @@ ax[1].legend()
 plt.show()
 
 # NOW THE EXPERIMENT TIME
+# (takes 3 mins with 21 slopes and 50 exps)
 
+# the slopes to simulate
+slopes = np.linspace(-2,2,21)
+
+numExps = 50
+
+# initialize output matrix
+results = np.zeros((len(slopes),numExps,2))
+
+for slopei in range(len(slopes)):
+
+  for N in range(numExps):
+
+    # create a dataset and run the model
+    x,y = create_Data(slopes[slopei])
+    yHat,losses = build_and_train_the_model(x,y)
+    yHat = yHat.detach()
+
+    # store the final loss and performance
+    results[slopei,N,0] = losses[-1]
+    results[slopei,N,1] = np.corrcoef(y.T,yHat.T)[0,1]
+
+
+# correlation can be 0 if the model didn't do well. Set nan's->0
+results[np.isnan(results)] = 0
 
 
 
