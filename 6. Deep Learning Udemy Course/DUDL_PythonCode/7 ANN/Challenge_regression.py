@@ -14,10 +14,6 @@ matplotlib_inline.backend_inline.set_matplotlib_formats('svg')
 # ********************************************next
 def build_and_train_the_model(x,y):
   
-    # N = 100
-    # x = torch.randn(N,1)
-    # y = x + torch.randn(N,1)/2
- 
     # and plot
     plt.plot(x,y,'s')
     plt.show()
