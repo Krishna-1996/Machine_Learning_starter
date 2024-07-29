@@ -69,26 +69,28 @@ def build_and_train_the_model(x,y):
     # final forward pass
     predictions = ANNreg(x)
 
-    # final loss (MSE)
-    testloss = (predictions-y).pow(2).mean()
-    print(testloss)
-    plt.plot(losses.detach(),'o',markerfacecolor='w',linewidth=.1)
-    plt.plot(numepochs,testloss.detach(),'ro')
-    plt.xlabel('Epoch')
-    plt.ylabel('Loss')
-    plt.title('Final loss = %g' %testloss.item())
-    plt.show()
+    return predictions, losses
 
-    # ********************************************next
-    testloss.item()
-    print(testloss.item())
-    # ********************************************next
-    # plot the data
-    plt.plot(x,y,'bo',label='Real data')
-    plt.plot(x,predictions.detach(),'rs',label='Predictions')
-    plt.title(f'prediction-data r={np.corrcoef(y.T,predictions.detach().T)[0,1]:.2f}')
-    plt.legend()
-    plt.show()
+    # # final loss (MSE)
+    # testloss = (predictions-y).pow(2).mean()
+    # print(testloss)
+    # plt.plot(losses.detach(),'o',markerfacecolor='w',linewidth=.1)
+    # plt.plot(numepochs,testloss.detach(),'ro')
+    # plt.xlabel('Epoch')
+    # plt.ylabel('Loss')
+    # plt.title('Final loss = %g' %testloss.item())
+    # plt.show()
+
+    # # ********************************************next
+    # testloss.item()
+    # print(testloss.item())
+    # # ********************************************next
+    # # plot the data
+    # plt.plot(x,y,'bo',label='Real data')
+    # plt.plot(x,predictions.detach(),'rs',label='Predictions')
+    # plt.title(f'prediction-data r={np.corrcoef(y.T,predictions.detach().T)[0,1]:.2f}')
+    # plt.legend()
+    # plt.show()
 
 
 
