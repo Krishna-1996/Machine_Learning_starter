@@ -94,6 +94,9 @@ def create_Data(m):
     return x, y
 
 # TEST IT ONCE
+x,y = create_Data(0.8)# m = 0.8 in function
+# run the model
+yHat, losses = build_and_train_the_model(x,y)
 
 
 
