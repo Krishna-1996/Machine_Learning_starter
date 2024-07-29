@@ -88,6 +88,11 @@ def build_and_train_the_model(x,y):
     # plt.legend()
     # plt.show()
 
+def create_Data(m):
+    N = 50
+    x = torch.randn(N,1)
+    y = x + torch.randn(N,1)/2
+    return x, y
 
 
 
