@@ -25,7 +25,7 @@ ANNreg = nn.Sequential(
     nn.ReLU(),       # activation function
     nn.Linear(1,1)   # output layer
     )
-ANNreg
+print(ANNreg)
 
 # ********************************************next
 # learning rate
