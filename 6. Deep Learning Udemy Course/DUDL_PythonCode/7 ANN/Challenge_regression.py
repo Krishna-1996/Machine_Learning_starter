@@ -9,17 +9,20 @@ matplotlib_inline.backend_inline.set_matplotlib_formats('svg')
 # ********************************************next
 # create data
 
-N = 100
-x = torch.randn(N,1)
-y = x + torch.randn(N,1)/2
 
-# and plot
-plt.plot(x,y,'s')
-plt.show()
 
 # ********************************************next
+def train_the_model(x,y):
+  
+    N = 100
+    x = torch.randn(N,1)
+    y = x + torch.randn(N,1)/2
+ 
+    # and plot
+    plt.plot(x,y,'s')
+    plt.show()
 
-# build model
+    # build model
 ANNreg = nn.Sequential(
     nn.Linear(1,1),  # input layer
     nn.ReLU(),       # activation function
@@ -56,7 +59,7 @@ for epochi in range(numepochs):
   # backprop
   optimizer.zero_grad()
   loss.backward()
-  optimizer.step()
+  optimizer.step() 
 
 # ********************************************next
 
