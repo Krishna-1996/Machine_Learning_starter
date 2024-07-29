@@ -6,11 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib_inline.backend_inline
 matplotlib_inline.backend_inline.set_matplotlib_formats('svg')
 
-# ********************************************next
-# create data
-
-
-
+# BUILT AND TRAIN THE MODEL IN ONE FUNCTION
 # ********************************************next
 def build_and_train_the_model(x,y):
   
