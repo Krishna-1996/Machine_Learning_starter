@@ -1,13 +1,7 @@
 # 1 Gradient_decent 1D
 
 '''
-We'll create a simple 1D function 
-𝑓
-(
-𝑥
-)
-=
-𝑥2f(x)=x 2, and use gradient descent to find its minimum.
+We'll create a simple 1D function "f(x) = x^2", and use gradient descent to find its minimum.
 '''
 import numpy as np
 import matplotlib.pyplot as plt
