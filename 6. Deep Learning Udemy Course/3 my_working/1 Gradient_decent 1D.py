@@ -1,3 +1,2 @@
-# 1 Gradient_decent 1 and 2D
+# 1 Gradient_decent 1D
 
-#Gradient Descent in 1D
