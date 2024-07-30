@@ -1,5 +1,9 @@
 # 2 Gradient_decent 2D
 
+'''
+We'll create a simple 1D function "f(x,y) = x^2 + y^2", and use gradient descent to find its minimum.
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
 
